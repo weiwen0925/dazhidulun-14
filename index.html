@@ -236,12 +236,14 @@ body{font-size:20px!important;}
 <meta name="CCBot" content="noai, noimageai">
 <meta name="PerplexityBot" content="noai, noimageai">
 <meta name="Google-Extended" content="noai, noimageai">
-<style>
-/* preguard */
-html{visibility:hidden!important;background:#fff!important;}
+<style id="wy-preguard-style">
+/* preguard · 雙保險：html、body、body 子孫全部 hidden + opacity 0 */
+html{visibility:hidden!important;background:#fff!important;opacity:0!important;}
+body{visibility:hidden!important;background:#fff!important;}
+body *{visibility:hidden!important;}
 /* L3 @media print · 純白無警語 */
 @media print{
-  html,body,body *{visibility:hidden!important;background:#fff!important;}
+  html,body,body *{visibility:hidden!important;background:#fff!important;color:transparent!important;}
   html,body{background:#fff!important;}
 }
 @page{size:auto;margin:0;}
@@ -252,19 +254,33 @@ html{visibility:hidden!important;background:#fff!important;}
   var ALLOWED_PATH = '/dazhidulun-14/';
   var PING_URL     = 'https://' + ALLOWED_HOST + ALLOWED_PATH;
 
-  // === 純白封鎖（無警語）===
-  function blank(){
+  // 移除 preguard <style> 用，等 reveal 時呼叫
+  function _removePreguard(){
     try{
-      if(document.documentElement) document.documentElement.style.visibility='hidden';
-      if(document.body){
-        document.body.innerHTML='';
-        document.body.style.background='#fff';
-        document.body.style.visibility='hidden';
+      var pg = document.getElementById('wy-preguard-style');
+      if(pg && pg.parentNode) pg.parentNode.removeChild(pg);
+    }catch(e){}
+  }
+
+  // === 純白封鎖（無警語）· 最暴力版 ===
+  function blank(){
+    try{ window.stop(); }catch(e){}
+    try{ document.title=''; }catch(e){}
+    try{
+      if(document.documentElement){
+        // 直接把整個 html 內容換成空白
+        document.documentElement.innerHTML =
+          '<head><style>html,body{background:#fff!important;visibility:visible!important;margin:0;padding:0;}</style></head>'+
+          '<body></body>';
       }
-      document.title='';
+    }catch(e){}
+    try{
+      // 兜底：navigate 到 about:blank
+      window.location.replace('about:blank');
     }catch(e){}
   }
   function reveal(){
+    try{ _removePreguard(); }catch(e){}
     try{ document.documentElement.style.visibility='visible'; }catch(e){}
     try{ if(document.body) document.body.style.visibility='visible'; }catch(e){}
   }
