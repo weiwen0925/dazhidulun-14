@@ -1,0 +1,25 @@
+# 搜尋引擎：開放收錄
+User-agent: *
+Allow: /
+
+# AI 訓練爬蟲：拒絕（與頁面 noai meta 一致）
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+
+Sitemap: https://weiwen0925.github.io/dazhidulun-14/sitemap.xml
