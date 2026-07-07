@@ -1343,5 +1343,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C14P10:END-->
+<!--WY-C14P11:BEGIN-->
+<style id="wy-c14p11-css">
+.c14p11-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c14p11-fabbox.show{display:block;}
+.c14p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c14p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c14p11-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c14p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c14p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c14p11-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c14p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c14p11-modal.open{display:flex;}
+.c14p11-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c14p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c14p11-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c14p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c14p11-close:hover{background:#e3d5b8;}
+.c14p11-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c14p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c14p11-tbl th,.c14p11-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c14p11-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c14p11-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c14p11-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c14p11-tbl b{color:#8b2500;}
+.c14p11-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c14p11-note b{color:#8b2500;}
+@media(max-width:900px){.c14p11-fabbox{right:14px;}.c14p11-tbl{font-size:11.5px;}.c14p11-card{padding:26px 14px 16px;}}
+</style>
+<div class="c14p11-fabbox" id="c14p11Box"><button class="c14p11-btn" id="c14p11Btn" type="button" aria-label="開啟全景總表"><span class="c14p11-ic">▦</span><span class="c14p11-ls"><span class="c14p11-l1">本品 · 羼提波羅蜜綱要</span><span class="c14p11-l2">心不動生忍法忍 · 彩畫得膠</span></span></button></div><div class="c14p11-modal" id="c14p11Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c14p11-card"><button class="c14p11-close" id="c14p11Close" type="button" aria-label="關閉">×</button><h3>卷十四·第十一品 羼提波羅蜜綱要 · 全景總表</h3><p class="sub">卷十四・第十一品｜心不動・生忍法忍目足雙運・認知轉化算法・主動截斷彩畫得膠・收攝中觀</p><table class="c14p11-tbl"><caption>一、羼提綱要與雙軌架構（心不動·生忍法忍·本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>心不動故</td><td>「心不動故，應具足羼提波羅蜜」——忍辱的核心判準不是外境順逆，而是心識能否保持不動搖（成就不在「忍得久忍得苦」而在心數法運作軌跡不偏離）</td></tr><tr><td>生忍法忍</td><td>羼提（Kṣānti）秦言「忍辱」非「忍氣吞聲」，含能忍之智慧、所忍之境界、忍後之安住；生忍（對眾生）、法忍（對法實相）</td></tr><tr><td>目足雙運</td><td>福慧雙修方得菩薩道圓滿（生忍如足、法忍如目）</td></tr></tbody></table><table class="c14p11-tbl"><caption>二、菩薩忍的認知轉化算法與獨特質地（本品核心）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四步算法</td><td>惡緣輸入（惡口罵詈/刀杖所加）→業果邏輯過濾→畢竟空最高觀照→三法印執行印證——把「本能瞋恚」轉化為「心不動」的完整算法</td></tr><tr><td>主動截斷</td><td>「力雖能報，不生惡心，不起惡口業」——菩薩之忍是具備報復力量但因「見空」主動選擇不生惡心（vs 世俗之忍「無力報復而被迫壓抑」，壓抑反累積瞋恨成未來爆發種子）</td></tr><tr><td>彩畫得膠</td><td>「得是忍法故，忍智牢固；譬如畫彩，得膠則堅著」——忍是將空慧固化於心識的接著劑，令一切智慧善法堅著</td></tr></tbody></table><table class="c14p11-tbl"><caption>三、阿毘曇分析與收攝中觀（麤細·界繫·善法斷除）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>麤細光譜·遮止自然</td><td>善心有麤細——忍辱屬「麤」（前線防禦·主客對立）、禪定屬「細」（後方安住·人我兩忘）；忍辱是主動遮止、禪定是自然免疫</td></tr><tr><td>界繫·漏無漏</td><td>欲界「必繫」（有大量外惡可忍）、色界「爭議」（無外惡可忍）、無漏位「不繫」（無生法忍）；忍辱亦有漏亦無漏、凡聖俱得（從凡夫過渡到聖者的連續性修行載體）</td></tr><tr><td>善法斷除·收攝中觀</td><td>忍辱障己心他心不善法故名善（雙向防護罩）；有漏之忍「思惟斷」淨化微細法執、無漏之忍「不斷」為菩提道基石；阿毘曇廣分別終須收攝於中觀「畢竟空、緣起如幻」</td></tr></tbody></table><p class="c14p11-note">阿毘曇析其麤細相應，中論證其如幻本空。龍樹的方法論宣示：阿毘曇式分類（麤細、有漏無漏、界繫、心數法、思惟斷）都是「精準對治」的操作手冊，但這些手冊最終要服務於中觀核心宗義（一切法畢竟空、緣起如幻、三輪體空）。世俗諦中具足福慧精準對治、勝義諦中<b>彩畫得膠</b>三印印法。</p></div></div>
+<script id="wy-c14p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c14p11Btn"),BOX=document.getElementById("c14p11Box"),MODAL=document.getElementById("c14p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c14p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C14P11:END-->
 </body>
 </html>
