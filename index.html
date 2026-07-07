@@ -1025,5 +1025,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C14P4:END-->
+<!--WY-C14P5:BEGIN-->
+<style id="wy-c14p5-css">
+.c14p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c14p5-fabbox.show{display:block;}
+.c14p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c14p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c14p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c14p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c14p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c14p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c14p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c14p5-modal.open{display:flex;}
+.c14p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c14p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c14p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c14p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c14p5-close:hover{background:#e3d5b8;}
+.c14p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c14p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c14p5-tbl th,.c14p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c14p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c14p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c14p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c14p5-tbl b{color:#8b2500;}
+.c14p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c14p5-note b{color:#8b2500;}
+@media(max-width:900px){.c14p5-fabbox{right:14px;}.c14p5-tbl{font-size:11.5px;}.c14p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c14p5-fabbox" id="c14p5Box"><button class="c14p5-btn" id="c14p5Btn" type="button" aria-label="開啟全景總表"><span class="c14p5-ic">▦</span><span class="c14p5-ls"><span class="c14p5-l1">本品 · 持戒生精進</span><span class="c14p5-l2">約束生爆發力 · 射無所射</span></span></button></div><div class="c14p5-modal" id="c14p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c14p5-card"><button class="c14p5-close" id="c14p5Close" type="button" aria-label="關閉">×</button><h3>卷十四·第五品 持戒生精進 · 全景總表</h3><p class="sub">卷十四・第五品｜解脫悖論・能量壩・野干喻・射箭喻挽滿張力・能所雙亡射無所射</p><table class="c14p5-tbl"><caption>一、戒與精進的悖論·四階進路（約束生爆發力·本品主骨架）</caption><thead><tr><th>階</th><th>內容</th></tr></thead><tbody><tr><td>解脫之悖論</td><td>戒（收斂止息不放逸）vs 精進（擴張爆發無止盡驅動）——一股向內收斂的力量如何轉化為向外爆發的能量？（戒律是「<b>能量導向</b>」裝置，非單純壓抑）</td></tr><tr><td>心理動機蓄積</td><td>野干喻——絕處逢生的爆發</td></tr><tr><td>操作機制</td><td>射箭喻——挽滿張力</td></tr><tr><td>中觀昇華</td><td>能所雙亡·射無所射</td></tr></tbody></table><table class="c14p5-tbl"><caption>二、野干喻與射箭喻（能量導向·物理同構）</caption><thead><tr><th>喻</th><th>內容</th></tr></thead><tbody><tr><td>戒律＝能量壩</td><td>「除去放逸、捨世間樂、志求涅槃」——阻斷能量奔流向「世間樂」舊河道，導向「志求涅槃」新出口（壓抑使能量內耗淤積、導向則改道蓄勢成精進源頭活水）</td></tr><tr><td>野干喻（危機爆發）</td><td>野干截耳截尾皆忍（小事），至截牙「儻取我頭則無活路」即奮智力絕踊自濟——日常無常感不足以擊穿心理防禦，唯「死欲至時自知無冀」的絕境才能逼出果敢大精進</td></tr><tr><td>射箭喻（挽滿張力）</td><td>「戒為平地、定意為弓、<b>挽滿為精進</b>、箭為智慧、賊是無明」——先得平地→心安→挽滿→陷深；精進＝靜態張力（挽滿）；戒→精進→護諸根→生禪定→發智慧→破無明</td></tr></tbody></table><table class="c14p5-tbl"><caption>三、中觀昇華（緣起性空·能所雙亡）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>實有執著的危機</td><td>若視野干/獵人/弓箭/無明為實有（自性見），嚴密因果鏈反成新繫縛（執「我在精進、我有所破、我將得果」正是法執）——須導入緣起性空</td></tr><tr><td>如夢怖畏</td><td>生死大患與獵人威脅本質如夢如幻——勝義諦中無生無死、亦無取頭者（能怖的野干、所怖的殺鬼俱不可得）</td></tr><tr><td>射無所射</td><td>能所雙亡的無所得之精進——精進不是為「得到」實有涅槃，而是為「從惡夢中醒來」；因果鏈在世俗諦宛然有效、勝義諦無自性可得（執其實有鏈即成枷、了其性空鏈即成度）</td></tr></tbody></table><p class="c14p5-note">持戒的本質是「收斂止息不放逸」、精進的本質是「擴張爆發無止盡」，方向看似相反——這正是本品的大哉問。約束與爆發不是矛盾，而是<b>同一股能量的兩個相位</b>：戒律把散逸於五欲的能量收束聚焦，於關鍵閾值一舉釋放為精進。口訣：夢中猛獸，逼出幻城；弓滿弦張，射無所射。</p></div></div>
+<script id="wy-c14p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c14p5Btn"),BOX=document.getElementById("c14p5Box"),MODAL=document.getElementById("c14p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c14p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C14P5:END-->
 </body>
 </html>
