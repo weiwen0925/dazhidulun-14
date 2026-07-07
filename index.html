@@ -1131,5 +1131,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C14P6:END-->
+<!--WY-C14P7:BEGIN-->
+<style id="wy-c14p7-css">
+.c14p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c14p7-fabbox.show{display:block;}
+.c14p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c14p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c14p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c14p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c14p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c14p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c14p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c14p7-modal.open{display:flex;}
+.c14p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c14p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c14p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c14p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c14p7-close:hover{background:#e3d5b8;}
+.c14p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c14p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c14p7-tbl th,.c14p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c14p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c14p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c14p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c14p7-tbl b{color:#8b2500;}
+.c14p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c14p7-note b{color:#8b2500;}
+@media(max-width:900px){.c14p7-fabbox{right:14px;}.c14p7-tbl{font-size:11.5px;}.c14p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c14p7-fabbox" id="c14p7Box"><button class="c14p7-btn" id="c14p7Btn" type="button" aria-label="開啟全景總表"><span class="c14p7-ic">▦</span><span class="c14p7-ls"><span class="c14p7-l1">本品 · 持戒生智慧</span><span class="c14p7-l2">蓮華出泥 · 利刀歸鞘戒慧不二</span></span></button></div><div class="c14p7-modal" id="c14p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c14p7-card"><button class="c14p7-close" id="c14p7Close" type="button" aria-label="關閉">×</button><h3>卷十四·第七品 持戒生智慧 · 全景總表</h3><p class="sub">卷十四・第七品｜有為生無為・蓮華出泥破法執・抽離天秤破我執・利刀歸鞘護慧根・戒慧不二</p><table class="c14p7-tbl"><caption>一、三重轉化架構（破法執/破我執/護慧根·本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心叩問</td><td>「云何持戒能生智慧？」——尸羅（有為造作依附世俗規範）如何催生般若（無為離相超越二元）？受制於條件的「戒」如何催生超越條件的「慧」？</td></tr><tr><td>本質解構（蓮華出泥·破法執）</td><td>「觀戒相從何而有，知從眾罪而生；若無眾罪則亦無戒…從因緣有，何故生著？譬如<b>蓮華出自污泥</b>，色雖鮮好出處不淨」——戒無獨立自性（緣起相待假名）</td></tr><tr><td>心態超越（抽離天秤·破我執）</td><td>「若我以持戒貴而可取、破戒賤而可捨者，若有此心不應般若…<b>以智慧籌量，心不著戒，無取無捨</b>」——道德優越感障礙般若</td></tr><tr><td>功能防護（利刀歸鞘·護慧根）</td><td>「不持戒人雖有利智，以營世務…慧根漸鈍，譬如<b>利刀以割泥土遂成鈍器</b>；若出家持戒不營世業、常觀諸法實相無相，先雖鈍根以漸轉利」</td></tr></tbody></table><table class="c14p7-tbl"><caption>二、三角方法學（相待假/離四句/實相無相）</caption><thead><tr><th>方法</th><th>內容</th></tr></thead><tbody><tr><td>相待假（蓮華出泥）</td><td>戒因罪立——若無殺盜等罪則無不殺不盜等戒（戒不從虛空自生，依「罪」對境施設，無自性）</td></tr><tr><td>離四句（抽離天秤）</td><td>破道德優越感——設「持戒＝貴/取、破戒＝賤/捨」的價值階級即建立隱形道德階級（般若要求心無所住，價值階級即框架束縛）</td></tr><tr><td>實相無相（利刀歸鞘）</td><td>戒律的工具性價值——不是武器本身而是「刀鞘」，保護觀照實相的智慧之刀免於在世俗紛爭中鈍損（慧根不鈍）</td></tr></tbody></table><table class="c14p7-tbl"><caption>三、戒慧不二的圓成（本質→心態→功能一軸貫通）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>一軸貫通三層</td><td>見本質之空→方能心不著貴賤→心無貴賤方能安住無相→安住無相則<b>戒即是慧、慧不離戒</b></td></tr><tr><td>九字口訣</td><td>戒因罪立（透視緣起相待）·藥病雙亡（超越取捨對立）·利刀不割（常觀實相無相以護慧根）</td></tr><tr><td>尸羅波羅蜜生六波羅蜜</td><td>從有為的起點圓滿抵達無為的彼岸——真正的尸羅是般若無形無相的安住</td></tr></tbody></table><p class="c14p7-note">龍樹並未走向「戒無用論」——第三個「復次」以「利刀割泥遂成鈍器」重新肯定戒律的<b>工具性價值</b>：戒不是武器本身，而是刀鞘，其功能是保護那把觀照實相的智慧之刀。三層互補：見本質之空方能心不著貴賤、心無貴賤方能安住無相、安住無相則戒即是慧。此即中觀對「道德與智慧關係」的根本性重構。</p></div></div>
+<script id="wy-c14p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c14p7Btn"),BOX=document.getElementById("c14p7Box"),MODAL=document.getElementById("c14p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c14p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C14P7:END-->
 </body>
 </html>
