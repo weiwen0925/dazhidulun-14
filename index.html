@@ -866,5 +866,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C14P1:END-->
+<!--WY-C14P2:BEGIN-->
+<style id="wy-c14p2-css">
+.c14p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c14p2-fabbox.show{display:block;}
+.c14p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c14p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c14p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c14p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c14p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c14p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c14p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c14p2-modal.open{display:flex;}
+.c14p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c14p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c14p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c14p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c14p2-close:hover{background:#e3d5b8;}
+.c14p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c14p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c14p2-tbl th,.c14p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c14p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c14p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c14p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c14p2-tbl b{color:#8b2500;}
+.c14p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c14p2-note b{color:#8b2500;}
+@media(max-width:900px){.c14p2-fabbox{right:14px;}.c14p2-tbl{font-size:11.5px;}.c14p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c14p2-fabbox" id="c14p2Box"><button class="c14p2-btn" id="c14p2Btn" type="button" aria-label="開啟全景總表"><span class="c14p2-ic">▦</span><span class="c14p2-ls"><span class="c14p2-l1">本品 · 持戒生戒</span><span class="c14p2-l2">五階階梯 · 有漏孕育無漏</span></span></button></div><div class="c14p2-modal" id="c14p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c14p2-card"><button class="c14p2-close" id="c14p2Close" type="button" aria-label="關閉">×</button><h3>卷十四·第二品 持戒生戒 · 全景總表</h3><p class="sub">卷十四・第二品｜戒生戒五階・有漏孕育無漏・以戒熏心・相待假・二諦圓融</p><table class="c14p2-tbl"><caption>一、戒生戒的五階階梯（有漏孕育無漏·本品主骨架）</caption><thead><tr><th>階</th><th>內容</th></tr></thead><tbody><tr><td>五戒</td><td>世俗生活的基礎防範（殺盜淫妄酒）——地基（不在最高而在最穩）</td></tr><tr><td>沙彌戒</td><td>初階出家</td></tr><tr><td>律儀戒</td><td>具足戒·身口二業現象界的完全清淨（外在行為規範的極致）</td></tr><tr><td>禪定戒（定共戒）</td><td><b>由外入內的關鍵轉折</b>——外律純熟後粗惑漸弱、心不散亂易入禪定，戒隨定起自動防護</td></tr><tr><td>無漏戒（道共戒）</td><td>斷惑證聖·究竟清淨；核心叩問「有漏規範如何孕育無漏解脫？」</td></tr></tbody></table><table class="c14p2-tbl"><caption>二、三維分析·階梯運作的動力學</caption><thead><tr><th>維度</th><th>內容</th></tr></thead><tbody><tr><td>現象學（轉粗為細）</td><td>層層增上——前一階的成就是後一階生起的因（非同一層戒的重複）</td></tr><tr><td>心理學（以戒熏心）</td><td>從「被動克制」（強制規範·如被鎖鏈）轉為「主動清淨」（自然流露·如清泉自湧）；羸諸結使（煩惱如風、禪定如水，唯煩惱風軟禪定之水才能平）；動機從「畏惡道」昇華為「求佛道」</td></tr><tr><td>本體論（相待假）</td><td>「觀戒相從何而有，知從眾罪而生；若無眾罪則亦無戒」（罪與戒如秤兩端相待而立、戒無獨立自性）</td></tr></tbody></table><table class="c14p2-tbl"><caption>三、藥病矩陣與二諦圓融（病去藥除·三位一體）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>藥病矩陣</td><td>粗罪→五戒沙彌律儀戒、散亂→禪定戒、無明→無漏戒；<b>病好了（罪滅）藥（戒相）也就空了</b></td></tr><tr><td>中觀記憶總訣</td><td>階梯如幻·罪性本空·戒因罪有</td></tr><tr><td>二諦圓融三位一體</td><td>世俗諦（拾級而上·缺一不可）＋勝義諦（登頂忘梯·因緣和合）＝中道；腳下（踩穩每一階·不因見空廢事修）、眼中（撿麁攝細·戒定相續）、腦中（透視階梯如幻·即修即捨當體即空）三位一體</td></tr></tbody></table><p class="c14p2-note">「戒生戒」並非同一層戒的重複，而是前一階的成就成為後一階生起的因。真正要回答的不是「有哪幾層戒」，而是這座階梯運作的<b>動力學</b>：低階有漏的規範憑什麼能「生」出高階無漏的解脫？關鍵轉折在律儀戒→禪定戒（由外入內）。二諦圓融：登頂之後連梯子也不需執著，但世俗諦上必須一步步爬、缺一不可。</p></div></div>
+<script id="wy-c14p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c14p2Btn"),BOX=document.getElementById("c14p2Box"),MODAL=document.getElementById("c14p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c14p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C14P2:END-->
 </body>
 </html>
