@@ -2176,5 +2176,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P4:END-->
+<!--WY-BH14P5:BEGIN-->
+<style id="wy-bh14p5-css">
+.bh14p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p5-fabbox.show{display:block;}
+.bh14p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p5-modal.open{display:flex;}
+.bh14p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p5-close:hover{background:#dde2e6;}
+.bh14p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p5-tbl th,.bh14p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p5-tbl thead th:nth-child(1){width:32%;}.bh14p5-tbl thead th:nth-child(2){width:41%;}.bh14p5-tbl thead th:nth-child(3){width:27%;}
+.bh14p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p5-guan{background:#eef2f5;color:#37505f;}
+.bh14p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p5-tbl tbody tr:nth-child(even) td.bh14p5-guan{background:#e8eef2;}
+.bh14p5-tbl tbody tr:nth-child(even) td.bh14p5-qa{background:#e7ecdb;}
+.bh14p5-tbl b{color:#8b2500;}
+.bh14p5-guan b{color:#2f6b5a;}
+.bh14p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p5-fabbox{right:14px;}.bh14p5-tbl{font-size:11px;}.bh14p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p5-fabbox" id="bh14p5Box"><button class="bh14p5-btn" id="bh14p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p5-ic">譯</span><span class="bh14p5-ls"><span class="bh14p5-l1">本品 · 原文·白話·中觀</span><span class="bh14p5-l2">白話翻譯表</span></span></button></div><div class="bh14p5-modal" id="bh14p5Modal" role="dialog" aria-modal="true"><div class="bh14p5-card"><button class="bh14p5-close" id="bh14p5Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第5品 白話翻譯表（持戒生精進）</h3><p class="sub">大智度論卷十四·持戒生精進 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p5-tbl"><caption>持戒生精進 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p5-src">云何持戒而生精進？</td><td>為什麼持戒能夠生出精進呢？</td><td class="bh14p5-guan"><b>破題：收斂之戒何以生出擴張之精進</b>——戒是收攝、止息、約束，精進是擴張、驅動、奮發，表面性質相反，此問直探二者何以相生，下文即以「除去放逸」為樞紐，說明持戒清除的正是精進最大的障礙——放逸懈怠。</td></tr><tr><td class="bh14p5-src">持戒之人除去放逸，自力懃修，習無上法，捨世間樂，入於善道，志求涅槃，以度一切，大心不懈，以求佛為本，是為持戒能生精進。</td><td>持戒的人除去了放逸懈怠的毛病，憑藉自己的力量勤奮修行，學習無上的佛法，捨棄世間的享樂，進入良善的正道，立志追求涅槃，以度化一切眾生為己任，發廣大之心而不懈怠，以求成佛為根本目標，這就是持戒能夠出生精進的道理。</td><td class="bh14p5-guan"><b>動機轉向·戒除放逸即是精進的起點</b>——此段揭示持戒與精進相生的機制：放逸懈怠是精進最大的敵人，持戒的自我約束恰恰清除了這個障礙，使修行的能量不再向外散逸於世間欲樂，而能凝聚、導向「志求涅槃、度一切眾生」的大心，可見戒不是壓抑能量，而是為能量重新定向。</td></tr><tr><td class="bh14p5-src">復次，持戒之人，疲厭世苦老、病、死患，心生精進，必求自脫，亦以度人。譬如野干在林樹間，依隨師子及諸虎豹，求其殘肉以自存活。有時空乏，夜半踰城，深入人舍，求肉不得，屏處睡息，不覺夜竟；惶怖無計，走則慮不自免，住則懼畏死痛；便自定心，詐死在地。</td><td>再者，持戒的人，因為厭倦疲憊於世間老、病、死的種種苦患，心中生起精進之心，一定要求得自己解脫，也以此度化他人。這就像野干（一種類似狐狼的野獸）生活在山林樹叢之間，依附跟隨著獅子和各種虎豹，靠著撿食牠們吃剩的殘肉來維持自己的生存。有時遇到食物匱乏，便半夜翻越城牆，深入人們的住宅之中尋找食物，卻遍尋不著肉食，只好躲在隱蔽處睡覺休息，不知不覺天就要亮了；牠驚慌恐懼，不知如何是好——逃跑的話，擔心無法脫身；留在原地不動，又害怕遭遇死亡的痛苦；於是牠讓自己鎮定下來，假裝已經死去，倒臥在地上。</td><td class="bh14p5-guan"><b>野干喻·絕境逼出精進的爆發力</b>——此喻以野干（喻依附他力求活的修行者）為喻體，先鋪陳其平日苟且依附強者殘食度日的慣性，再以「求肉不得、進退維谷」的絕境，為下文「詐死求生」的精進轉折預作鋪墊，暗喻凡夫修行若無切身危機感，精進之心便難以真正發動。</td></tr><tr><td class="bh14p5-src">眾人來見，有一人言：「我須野干耳。」即便截取。野干自念：「截耳雖痛，但令身在。」次有一人言：「我須野干尾。」便復截去。野干復念：「截尾雖痛猶是小事。」次有一人言：「我須野干牙。」野干心念：「取者轉多，儻取我頭，則無活路。」即從地起奮其智力，絕踊間關，徑得自濟。</td><td>這時眾人前來看見了牠，其中一人說：「我需要野干的耳朵。」當下就割取了牠的耳朵。野干心裡想：「割掉耳朵雖然疼痛，但至少保住了性命。」接著又有一人說：「我需要野干的尾巴。」便又割去了牠的尾巴。野干又想：「割掉尾巴雖然疼痛，但仍然只是小事。」接下來又有一人說：「我需要野干的牙齒。」野干心裡想：「要取走的東西越來越多了，如果他們要取走我的頭，那我就沒有生路了！」於是牠立刻從地上一躍而起，奮力發揮自己的智慧和力量，飛快地竄逃、越過重重阻礙，終於得以自己逃脫解救了自己。</td><td class="bh14p5-guan"><b>從忍受到爆發·精進臨界點的心理機制</b>——野干對「截耳」「截尾」層層忍受退讓，卻在「將及其頭」的臨界點瞬間爆發全力逃生，正是精進發動的心理原型：忍耐與退讓有其限度，一旦觸及根本（性命／慧命），修行人必須捨棄一切苟且依附之心，奮起全力自求解脫，不能再心存僥倖。</td></tr><tr><td class="bh14p5-src">行者之心，求脫苦難，亦復如是：若老至時，猶故自寬，不能慇懃決斷精進；病亦如是，以有差期，未能決計；死欲至時，自知無冀，便能自勉，果敢慇懃，大修精進，從死地中畢至涅槃。</td><td>修行人尋求解脫苦難的心理歷程，也是同樣的道理：當衰老到來的時候，往往還自我寬慰，不能懇切果斷地精進修行；生病的時候也是如此，因為還存有痊癒的指望，所以還下不了決心；然而當死亡即將降臨的時候，自知已經沒有其他指望了，才終於能夠自我勉勵，果敢懇切，大力修習精進，從瀕臨死亡的絕境之中，最終到達涅槃的彼岸。</td><td class="bh14p5-guan"><b>老病死三階·精進動力的層遞覺醒</b>——此段將野干喻收束回修行人自身的生命歷程：老、病階段皆因尚存僥倖而拖延懈怠，唯有直面死亡的絕對性，才能斬斷一切自我寬慰的退路，激發出「大修精進」的決斷力，呼應開篇「戒除放逸」的主題——真正的精進，往往誕生於再無退路可依的臨界時刻。</td></tr><tr><td class="bh14p5-src">復次，持戒之法，譬如人射，先得平地，地平然後心安，心安然後挽滿，挽滿然後陷深。戒為平地，定意為弓，挽滿為精進，箭為智慧，賊是無明。若能如是展力精進，必至大道，以度眾生。</td><td>再者，持戒這件事，就譬如人射箭一樣：射箭的人必須先找到平坦的地面，地面平坦之後心才能安定，心安定之後才能將弓拉滿，把弓拉滿之後箭才能射得深入。持戒就像是這平坦的地面，禪定專注的心意就像是弓，把弓拉滿就像是精進的努力，箭矢就像是智慧，而所要射穿的敵賊就是無明。如果能夠像這樣充分發揮力量、精進不懈，就必定能到達大道，用來度化眾生。</td><td class="bh14p5-guan"><b>射箭喻·戒定進慧的物理同構鏈</b>——此喻以射箭的力學過程，精確對應「戒—定—進—慧—破無明」的修行因果鏈：戒是穩固的立足之地（無戒則心不安、無從施力），定是蓄力的弓（無定則無由挽滿），精進是拉滿弓弦的張力（無精進則箭不能深入），智慧則是穿透無明之賊的箭鏃；四者環環相扣，缺一不可，精進在此鏈條中正是連接「定」與「慧」得以真正發揮效力的關鍵張力。</td></tr><tr><td class="bh14p5-src">復次，持戒之人，能以精進自制五情，不受五欲；若心已去，能攝令還；是為持戒能護諸根。護諸根則生禪定，生禪定則生智慧，生智慧得至佛道。是為持戒生毘梨耶波羅蜜。</td><td>再者，持戒的人，能夠憑藉精進來自我克制眼、耳、鼻、舌、身五種感官情欲，不被色、聲、香、味、觸五欲所牽引俘虜；如果心念已經隨境流散出去了，也能夠將它收攝回來——這就是持戒能夠守護諸根的道理。能夠守護諸根，就能出生禪定；出生禪定，就能出生智慧；出生智慧，就能到達佛道。這就是持戒出生毘梨耶波羅蜜（精進波羅蜜）的道理。</td><td class="bh14p5-guan"><b>全品總收·護根—生定—生慧—至佛道的完整鏈條</b>——末段收束全品：精進的具體作用場域正是「自制五情、攝心令還」的護根功夫，並將此接回「戒→護根→定→慧→佛道」的完整修證次第，與前段射箭喻的戒定進慧結構前後呼應，總證「持戒生精進」不僅是心理動力上的相生，更是次第嚴密的修證因果鏈。</td></tr></tbody></table><p class="bh14p5-note">卷十四第5品「持戒生精進」原文·白話·中觀三欄對照，以「云何持戒而生精進」發問起，先明戒除放逸即精進之始，次以野干絕處逃生喻明臨界點爆發精進之理，續以老病死三階與射箭喻明戒定進慧物理同構之因果鏈，末以護諸根生定生慧總收全品。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：戒除放逸即是精進起點　絕境逼出精進的爆發力　戒定進慧的物理同構鏈　護根生定生慧至佛道</p></div></div>
+<script id="wy-bh14p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p5Btn"),BOX=document.getElementById("bh14p5Box"),MODAL=document.getElementById("bh14p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p5Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P5:END-->
 </body>
 </html>
