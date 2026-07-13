@@ -2278,5 +2278,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P6:END-->
+<!--WY-BH14P7:BEGIN-->
+<style id="wy-bh14p7-css">
+.bh14p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p7-fabbox.show{display:block;}
+.bh14p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p7-modal.open{display:flex;}
+.bh14p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p7-close:hover{background:#dde2e6;}
+.bh14p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p7-tbl th,.bh14p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p7-tbl thead th:nth-child(1){width:32%;}.bh14p7-tbl thead th:nth-child(2){width:41%;}.bh14p7-tbl thead th:nth-child(3){width:27%;}
+.bh14p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p7-guan{background:#eef2f5;color:#37505f;}
+.bh14p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p7-tbl tbody tr:nth-child(even) td.bh14p7-guan{background:#e8eef2;}
+.bh14p7-tbl tbody tr:nth-child(even) td.bh14p7-qa{background:#e7ecdb;}
+.bh14p7-tbl b{color:#8b2500;}
+.bh14p7-guan b{color:#2f6b5a;}
+.bh14p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p7-fabbox{right:14px;}.bh14p7-tbl{font-size:11px;}.bh14p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p7-fabbox" id="bh14p7Box"><button class="bh14p7-btn" id="bh14p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p7-ic">譯</span><span class="bh14p7-ls"><span class="bh14p7-l1">本品 · 原文·白話·中觀</span><span class="bh14p7-l2">白話翻譯表</span></span></button></div><div class="bh14p7-modal" id="bh14p7Modal" role="dialog" aria-modal="true"><div class="bh14p7-card"><button class="bh14p7-close" id="bh14p7Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第7品 白話翻譯表（持戒生智慧）</h3><p class="sub">大智度論卷十四·持戒生智慧 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p7-tbl"><caption>持戒生智慧 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p7-src">持戒之人，觀此戒相從何而有，知從眾罪而生；若無眾罪，則亦無戒。戒相如是，從因緣有，何故生著？</td><td>持戒的人，觀察這戒相究竟從何而生起，便知道它是依托眾多罪業而產生的；如果沒有種種罪業，也就不會有戒相的施設。戒相既然是這樣依因緣而有的，又何必對它心生執著呢？</td><td class="bh14p7-guan"><b>戒相緣起無自性·相待而有故不應著</b>——此段揭示「戒」並非獨立自存的實體，而是相待於「罪」才被施設出來的假名；若無罪業，戒也無從安立，二者互為緣起，既然戒相本身即是緣起法，執著其為實有便悖離了持戒的本意。</td></tr><tr><td class="bh14p7-src">譬如蓮華出自污泥，色雖鮮好，出處不淨；以是悟心，不令生著，是為持戒生般若波羅蜜。</td><td>這就好比蓮花雖然生長、綻放於污泥之中，花色雖然鮮豔美好，但它出生的地方卻是不清淨的；用這樣的道理來覺悟自心，不讓心對戒相生起執著，這就是持戒能夠出生般若波羅蜜的道理。</td><td class="bh14p7-guan"><b>蓮花喻·清淨相亦不離緣起污泥</b>——蓮花之美不能掩蓋其根源於污泥的事實，正如戒之清淨相也不能掩蓋其緣起於罪業對治的事實；體悟此理而不執著戒相為究竟實有，正是般若照見緣起性空的具體運用。</td></tr><tr><td class="bh14p7-qa">問：我嚴持戒律、遠離破戒者，難道不正是修行之道嗎？</td><td>問：我嚴格持守戒律、遠離破戒之人，難道這不正是修行應走的道路嗎？</td><td class="bh14p7-guan"><b>提問所示的價值分別心</b>——此問代表修行人常見的一種直覺：以為持戒生起的價值判斷（尊貴持戒者、鄙夷破戒者）本身即是修行的正確方向，下文的回答將直接破斥這個隱藏的執著。</td></tr><tr><td class="bh14p7-qa">答：若有「持戒貴而可取、破戒賤而可捨」的分別心，此心不應般若。因為般若要求心靈無所住，價值階級的存在即是心智的框架與束縛。</td><td>答：如果心中生起「持戒尊貴因而可以執取、破戒卑賤因而可以捨棄」這樣的分別心，此心便不與般若相應。因為般若要求心靈無所安住，一旦建立起價值高低的階序，這本身就成了心智的框架與束縛。</td><td class="bh14p7-guan"><b>破取捨二元·般若無所住</b>——答語直指問題核心：只要心中還存在「持戒尊貴、破戒卑賤」的價值階序與取捨分別，此心便與般若的無住本質相違；般若的智慧不在於建立更精緻的價值排序，而在於連這套排序機制本身都要照破。</td></tr><tr><td class="bh14p7-src">復次，持戒之人，心自思惟：若我以持戒貴而可取，破戒賤而可捨者，若有此心，不應般若。</td><td>再者，持戒的人應當自己在心中這樣思惟：如果我認為持戒尊貴因而可以執取，破戒卑賤因而可以捨棄，只要心中生起這樣的分別，就不與般若相應。</td><td class="bh14p7-guan"><b>自我覺察的修行提醒</b>——此段是持戒者對自身心念的內省提醒：持戒本身無過，但若在持戒的同時暗中滋生「我優於彼」的價值優越感，這份執取捨棄之心便會反過來障蔽般若智慧。</td></tr><tr><td class="bh14p7-src">以智慧籌量，心不著戒，無取、無捨，是為持戒生般若波羅蜜。</td><td>用智慧仔細衡量觀照，使心不執著於戒相本身，既不執取，也不捨棄，這就是持戒能夠出生般若波羅蜜的道理。</td><td class="bh14p7-guan"><b>無取無捨·般若的中道秤衡</b>——以智慧籌量戒相，既不因持戒而生優越的執取，也不因觀空而輕忽戒律的捨棄，「無取無捨」正是般若中道在持戒實踐中的具體落實。</td></tr><tr><td class="bh14p7-qa">問：既然戒本性空，又要心不著戒，為何仍須嚴持？</td><td>問：既然戒的本性是空，又要求心不執著於戒，那為什麼仍然必須嚴格持守呢？</td><td class="bh14p7-guan"><b>提問所示的表面矛盾</b>——此問挑明了「持戒生般若」一系論述可能引發的誤解：若戒本性空、不應執著，是否意味著持戒本身也可以放鬆？答語隨即釐清這個誤解。</td></tr><tr><td class="bh14p7-qa">答：為了保護「觀照實相的工具」——心智（利智）若頻繁處理世俗紛爭（營世務），必然產生認知疲勞與濁染。戒律存在的意義，就是維持這把智慧之刀的鋒利度。</td><td>答：這是為了保護「觀照實相的工具」——心智若頻繁忙於處理世俗的紛擾雜務，必然會產生認知上的疲勞與渾濁染污。戒律存在的意義，就在於維持這把智慧之刀的鋒利程度。</td><td class="bh14p7-guan"><b>利刀喻的先聲·戒為護慧之具</b>——此答預先呼應了下文「利刀割泥」之喻：戒律的價值不在於建立道德優越感，而在於保護觀照實相的智慧工具本身不被世俗事務磨鈍，戒與慧在此顯出「以戒護慧」的實踐關係。</td></tr><tr><td class="bh14p7-src">復次，不持戒人，雖有利智，以營世務，種種欲求生業之事，慧根漸鈍；譬如利刀以割泥土，遂成鈍器。</td><td>再者，不持戒的人，即使原本擁有敏銳的智慧，但因為忙於經營世俗事務，處理種種求取生計、貪欲之事，他的智慧根性便會漸漸變得遲鈍；這就好比一把鋒利的刀，如果拿來切割泥土，最終也會變成一把鈍器。</td><td class="bh14p7-guan"><b>利刀割泥喻·世務磨損慧根的物理類比</b>——鋒利如刀的智慧，若不斷投入切割世俗事務這樣粗糙的「泥土」，其鋒芒必然逐漸磨損遲鈍；此喻精確地將「營世務」與「慧根漸鈍」之間的因果，轉譯為感官可以直接把握的物理過程。</td></tr><tr><td class="bh14p7-src">若出家持戒，不營世業，常觀諸法實相無相；先雖鈍根，以漸轉利。</td><td>如果出家持戒，不經營世俗的事業，經常觀照諸法實相本自無相；這樣的人即使原本根性遲鈍，也會漸漸轉為敏銳銳利。</td><td class="bh14p7-guan"><b>止息世務·磨刀復利的逆向過程</b>——與上段利刀割泥相對，此段說明持戒出家、不營世務，等於讓智慧之刀停止在粗糙的世俗事務上損耗，轉而在「觀諸法實相無相」的細緻磨礪中重新變得鋒利，呼應「戒為護慧之具」的主旨。</td></tr><tr><td class="bh14p7-src">如是等種種因緣，名為持戒生般若波羅蜜。如是名為尸羅波羅蜜生六波羅蜜。</td><td>像這樣種種因緣道理，就叫做持戒能夠出生般若波羅蜜。像這樣，也就是尸羅波羅蜜能夠出生其餘六波羅蜜的道理。</td><td class="bh14p7-guan"><b>全品總收·一波羅蜜圓具六波羅蜜</b>——此句總收全品，並將視野從「持戒生般若」擴展到「尸羅波羅蜜生六波羅蜜」的整體格局：當持戒與空性智慧相應，戒本身便不再只是止惡行善的規約，而是六度圓滿具足的示現。</td></tr></tbody></table><p class="bh14p7-note">卷十四第7品「持戒生智慧」原文·白話·中觀三欄對照，以蓮花出污泥喻明戒相緣起無自性起，次以二組問答破取捨二元、明無取無捨之般若中道，續以利刀割泥喻明世務磨鈍慧根、止息世務磨刀復利之理，末以「一波羅蜜生六波羅蜜」總收全品。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：蓮花喻戒相緣起無自性　無取無捨般若中道　利刀割泥世務磨鈍慧根　一波羅蜜圓具六波羅蜜</p></div></div>
+<script id="wy-bh14p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p7Btn"),BOX=document.getElementById("bh14p7Box"),MODAL=document.getElementById("bh14p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p7Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P7:END-->
 </body>
 </html>
