@@ -1972,5 +1972,56 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 })();
 </script>
 <!--WY-GOTO:END-->
+<!--WY-BH14P1:BEGIN-->
+<style id="wy-bh14p1-css">
+.bh14p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p1-fabbox.show{display:block;}
+.bh14p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p1-modal.open{display:flex;}
+.bh14p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p1-close:hover{background:#dde2e6;}
+.bh14p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p1-tbl th,.bh14p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p1-tbl thead th:nth-child(1){width:32%;}.bh14p1-tbl thead th:nth-child(2){width:41%;}.bh14p1-tbl thead th:nth-child(3){width:27%;}
+.bh14p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p1-guan{background:#eef2f5;color:#37505f;}
+.bh14p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p1-tbl tbody tr:nth-child(even) td.bh14p1-guan{background:#e8eef2;}
+.bh14p1-tbl tbody tr:nth-child(even) td.bh14p1-qa{background:#e7ecdb;}
+.bh14p1-tbl b{color:#8b2500;}
+.bh14p1-guan b{color:#2f6b5a;}
+.bh14p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p1-fabbox{right:14px;}.bh14p1-tbl{font-size:11px;}.bh14p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p1-fabbox" id="bh14p1Box"><button class="bh14p1-btn" id="bh14p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p1-ic">譯</span><span class="bh14p1-ls"><span class="bh14p1-l1">本品 · 原文·白話·中觀</span><span class="bh14p1-l2">白話翻譯表</span></span></button></div><div class="bh14p1-modal" id="bh14p1Modal" role="dialog" aria-modal="true"><div class="bh14p1-card"><button class="bh14p1-close" id="bh14p1Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第1品 白話翻譯表（尸羅波羅蜜毒龍持戒本生）</h3><p class="sub">大智度論卷十四·尸羅波羅蜜毒龍持戒本生 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p1-tbl"><caption>尸羅波羅蜜毒龍持戒本生 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p1-qa">問曰：已知尸羅相，云何為尸羅波羅蜜？</td><td>問道：既然已經知道「尸羅」（戒）的相狀是什麼了，那麼要如何才稱得上是「尸羅波羅蜜」（持戒波羅蜜）呢？</td><td class="bh14p1-guan"><b>從「戒」到「戒波羅蜜」的提問</b>——此問點出全篇核心：戒本身與戒「波羅蜜」（到彼岸）之間必有質的躍升，不是持戒的量增加就自動成為波羅蜜，下文即以「寧自失身，不毀小戒」的操作定義作答，逗出全品層層深入的論證。</td></tr><tr><td class="bh14p1-qa">答曰：有人言——菩薩持戒，寧自失身，不毀小戒，是為尸羅波羅蜜。</td><td>回答：有人說——菩薩持戒，寧可捨棄自己的身命，也絕不毀犯哪怕最微小的一條戒律，這就稱為尸羅波羅蜜。</td><td class="bh14p1-guan"><b>以極端情境定義波羅蜜的門檻</b>——「寧自失身，不毀小戒」以生死交關的極端情境作為操作性定義，並非鼓勵無謂犧牲，而是藉由這個判準的「絕對性」，測試持戒之心是否已徹底、不留一絲討價還價的餘地，為下文「大力毒龍本生」公案立下判準基準。</td></tr><tr><td class="bh14p1-src">如上《蘇陀蘇摩王經》中說，不惜身命以全禁戒。如菩薩本身，曾作大力毒龍。若眾生在前，身力弱者，眼視便死；身力強者，氣往而死。是龍受一日戒，出家求靜，入林樹間思惟；坐久，疲懈而睡。龍法，睡時形狀如蛇，身有文章，七寶雜色。獵者見之驚喜，言曰：「以此希有難得之皮，獻上國王以為服飾，不亦宜乎？」便以杖按其頭，以刀剝其皮。龍自念言：「我力如意，傾覆此國，其如反掌；此人小物，豈能困我？我今以持戒故，不計此身，當從佛語！」於是自忍，眠目不視，閉氣不息；憐愍此人，為持戒故，一心受剝，不生悔意。既以失皮，赤肉在地，時日大熱，宛轉土中；欲趣大水，見諸小蟲來食其身，為持戒故，不復敢動。自思惟言：「今我此身以施諸蟲，為佛道故，今以肉施，以充其身；後成佛時，當以法施，以益其心。」如是誓已，身乾命絕，即生第二忉利天上。爾時毒龍，釋迦文佛是；是時獵者，提婆達等六師是也；諸小蟲輩，釋迦文佛初轉法輪，八萬諸天得道者是。菩薩護戒，不惜身命，決定不悔，其事如是，是名尸羅波羅蜜。</td><td>就如同上面《蘇陀蘇摩王經》中所說的，不顧惜身命以保全禁戒。就像菩薩自己，曾經投生為一條力大無窮的毒龍。這條龍只要在眾生面前，若對方身力弱小，只消一眼看去對方便會死去；若對方身力強壯，龍一吐氣對方也會斃命。這條龍受持一日戒，出家尋求寂靜，進入林間樹下靜坐思惟；坐了很久，因疲倦而睡著了。依龍的習性，睡著時形狀會變回蛇形，身上有花紋，色彩斑斕如七寶交錯。獵人看見了又驚又喜，說道：「用這張稀有難得的皮，獻給國王做成服飾，豈不是很相稱嗎？」於是便用木杖壓住牠的頭，用刀剝牠的皮。這條龍心裡想著：「我的力量隨心所欲，要傾覆這個國家，就像翻轉手掌一樣容易；這個人不過是渺小之物，怎麼可能困住我？但我現在因為持戒的緣故，不再計較這個身體，應當依從佛的教誨！」於是牠強自忍耐，閉上眼睛不去看，閉住氣息不呼吸；憐憫這個獵人，為了持戒的緣故，一心承受剝皮之痛，不生一絲悔恨之心。皮被剝去之後，赤裸的肉身倒在地上，當時天氣酷熱，牠在泥土中輾轉翻滾；正想爬向大水，卻見到許多小蟲爬來啃食牠的身體，牠為了持戒的緣故，不敢再有任何動作。牠自己思惟：「如今我把這個身體布施給這些小蟲，是為了佛道的緣故；現在用血肉布施，用來充實牠們的身體；等到將來成佛之時，我將以佛法布施，來利益牠們的心。」發了這樣的誓願之後，身體乾枯、性命終結，隨即往生到第二層忉利天上。那時的毒龍，就是後來的釋迦牟尼佛；當時的獵人，就是提婆達多等六師外道；那些小蟲，就是釋迦牟尼佛初轉法輪時，八萬諸天得道的那些眾生。菩薩護持戒律、不顧惜身命、決定不生悔意，這件事就是如此，這就稱為尸羅波羅蜜。</td><td class="bh14p1-guan"><b>絕對力量與絕對克制的悖論張力</b>——毒龍擁有「傾覆此國如反掌」的絕對力量，卻在持戒的一念之間選擇徹底的不動、不抵抗，甚至任由小蟲蠶食至死；這個極端對比正是全篇「操作定義」的具體演繹：真正的尸羅波羅蜜不是能力不足而不作惡，而是有能力毀戒卻選擇徹底捨棄能動性，將布施（捨身飼蟲）與持戒（不毀戒相）於同一行為中合而為一，展現大乘「悲願先於自保」的核心精神。</td></tr><tr><td class="bh14p1-src">復次，菩薩持戒，為佛道故，作大要誓，必度眾生！不求今世、後世之樂，不為名聞虛譽法故，亦不自為早求涅槃，但為眾生沒在長流，恩愛所欺，愚惑所誤，我當度之令到彼岸。一心持戒，為生善處，生善處故見善人，見善人故生智慧，生智慧故得行六波羅蜜，得行六波羅蜜故得佛道。如是持戒名為尸羅波羅蜜。復次，菩薩持戒，心樂善清淨，不為畏惡道，亦不為生天，但求善淨；以戒熏心，令心樂善，是為尸羅波羅蜜。復次，菩薩以大悲心持戒，得至佛道，是名尸羅波羅蜜。</td><td>再者，菩薩持戒，是為了成就佛道的緣故，發下宏大而懇切的誓願，一定要度化眾生！不求今生、來世的安樂，不是為了求得名聲虛譽的緣故，也不是為了自己及早求得涅槃，只是因為眾生沉沒在生死長流之中，被恩愛情執所欺瞞，被愚癡迷惑所誤導，我應當度化他們，使他們到達解脫的彼岸。一心持戒，是為了投生於善處；投生善處，才能見到善知識；見到善知識，才能生起智慧；生起智慧，才能修行六波羅蜜；修行六波羅蜜，才能成就佛道。像這樣持戒，就稱為尸羅波羅蜜。再者，菩薩持戒，內心喜樂於清淨善法，不是因為畏懼墮入惡道，也不是為了往生天界，只是純粹追求良善清淨；用戒法薰陶內心，使心喜樂於善法，這就是尸羅波羅蜜。再者，菩薩以廣大的悲心來持戒，因而得以到達佛道，這就稱為尸羅波羅蜜。</td><td class="bh14p1-guan"><b>動機的層層淨化·從功利到大悲大願</b>——此段連續以「不求今世後世之樂、不為名聞、不自求早涅槃」三重否定排除較低層次的持戒動機，正面標舉「為度眾生、大悲大願」為核心動力；再進一步以「心樂善清淨、不畏惡道不為生天」排除趨樂避苦的動機，凸顯持戒的最終純度在於「動機的空性化與利他化」同時完成，非僅止於行為的如法而已。</td></tr><tr><td class="bh14p1-src">若深入諸法相，行空三昧，慧眼觀故，罪不可得。</td><td>如果能夠深入觀照諸法的實相，修行空三昧，以智慧之眼來觀照，就會發現所謂的「罪」其實是了不可得的。</td><td class="bh14p1-guan"><b>般若觀照下的「罪不可得」</b>——此句是全品從「事相持戒」轉向「般若觀門」的關鍵樞紐：前文種種捨身、大悲大願皆屬有相的事修，此處進一步以空三昧、慧眼觀照，指出「罪」這一法本身在勝義諦中了不可得，非謂可以放縱造罪，而是揭示持戒最究竟的圓滿，仍須與「我空、法空」的智慧觀照相應，方為悲智雙運的中道持戒。</td></tr><tr><td class="bh14p1-src">復次，菩薩持戒，能生六波羅蜜，是則名為尸羅波羅蜜。</td><td>再者，菩薩持戒，能夠出生其餘六波羅蜜（布施、忍辱、精進、禪定、般若等），這就稱為尸羅波羅蜜。</td><td class="bh14p1-guan"><b>一戒攝生六度·全品總收</b>——以「持戒能生六波羅蜜」總收全品，呼應標題「能生六波羅蜜」一節，顯示尸羅波羅蜜並非六度中孤立的一支，而是能貫穿並助發其餘諸度的根本基盤，此即全品「悲空雙運」架構的最終總攝——事相持戒、大悲大願、般若空觀三者層層遞進，終匯歸於「尸羅波羅蜜」統攝六度的全景。</td></tr></tbody></table><p class="bh14p1-note">卷十四第1品「尸羅波羅蜜毒龍持戒本生」原文·白話·中觀三欄對照，以「已知尸羅相云何為尸羅波羅蜜」發問起，即以「寧自失身不毀小戒」為操作定義，續以大力毒龍捨身飼蟲本生公案演繹絕對持戒之悲願，再明動機層層淨化（不求今後世樂·不為名聞·不自求早涅槃），終以般若觀門「罪不可得」與「持戒能生六波羅蜜」總攝全品。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：操作定義的絕對門檻　絕對力量與絕對克制的悖論張力　動機層層淨化從功利到大悲大願　般若觀照下罪不可得　一戒攝生六度</p></div></div>
+<script id="wy-bh14p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p1Btn"),BOX=document.getElementById("bh14p1Box"),MODAL=document.getElementById("bh14p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p1Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P1:END-->
 </body>
 </html>
