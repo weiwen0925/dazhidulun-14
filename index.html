@@ -2431,5 +2431,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P9:END-->
+<!--WY-BH14P10:BEGIN-->
+<style id="wy-bh14p10-css">
+.bh14p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p10-fabbox.show{display:block;}
+.bh14p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p10-modal.open{display:flex;}
+.bh14p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p10-close:hover{background:#dde2e6;}
+.bh14p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p10-tbl th,.bh14p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p10-tbl thead th:nth-child(1){width:32%;}.bh14p10-tbl thead th:nth-child(2){width:41%;}.bh14p10-tbl thead th:nth-child(3){width:27%;}
+.bh14p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p10-guan{background:#eef2f5;color:#37505f;}
+.bh14p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p10-tbl tbody tr:nth-child(even) td.bh14p10-guan{background:#e8eef2;}
+.bh14p10-tbl tbody tr:nth-child(even) td.bh14p10-qa{background:#e7ecdb;}
+.bh14p10-tbl b{color:#8b2500;}
+.bh14p10-guan b{color:#2f6b5a;}
+.bh14p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p10-fabbox{right:14px;}.bh14p10-tbl{font-size:11px;}.bh14p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p10-fabbox" id="bh14p10Box"><button class="bh14p10-btn" id="bh14p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p10-ic">譯</span><span class="bh14p10-ls"><span class="bh14p10-l1">本品 · 原文·白話·中觀</span><span class="bh14p10-l2">白話翻譯表</span></span></button></div><div class="bh14p10-modal" id="bh14p10Modal" role="dialog" aria-modal="true"><div class="bh14p10-card"><button class="bh14p10-close" id="bh14p10Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第10品 白話翻譯表（中觀辯證與超越結構）</h3><p class="sub">大智度論卷十四·中觀辯證與超越結構 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p10-tbl"><caption>中觀辯證與超越結構 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p10-qa">問曰：定有眾生，何以故言無？五眾因緣，有眾生法；譬如五指因緣，拳法生。</td><td>問曰：明明實際上有眾生存在，為什麼說沒有呢？由五蘊和合的因緣，才有「眾生」這個法的假立；就好比由五根手指和合的因緣，才產生「拳頭」這個法一樣。</td><td class="bh14p10-guan"><b>五指喻拳·眾生假名的類比詰問</b>——外人以「五指因緣有拳」類比「五蘊因緣有眾生」，主張眾生如拳一般確實存在，此問代表對緣起假名法之「假有」與「實有」界線最直接的挑戰。</td></tr><tr><td class="bh14p10-qa">答曰：此言非也！若五眾因緣有眾生法者，除五眾，則別有眾生法，然不可得；眼自見色，耳自聞聲，鼻嗅香，舌知味，身知觸，意知法，空無我法；離此六事，更無眾生。諸外道輩倒見故，言眼能見色，是為眾生；乃至意能知法，是為眾生；又能憶念，能受苦樂，是為眾生；但作是見，不知眾生實。</td><td>答曰：這話並不對！如果說由五蘊因緣而有「眾生」這個法，那麼除了五蘊之外，應當另有一個獨立的「眾生法」存在，然而這是了不可得的；眼睛自能見色、耳朵自能聞聲、鼻子自能嗅香、舌頭自能嘗味、身體自能覺觸、意根自能了知諸法，這當中本來空無「我」這個實法；離開這六種作用之外，根本沒有另一個「眾生」存在。各派外道由於顛倒的知見，才說眼睛能見色就是眾生，乃至意根能了知諸法就是眾生；又說能夠憶念、能夠感受苦樂就是眾生；他們只是執持這樣的錯誤知見，並不了知眾生的真實相貌。</td><td class="bh14p10-guan"><b>六根自運作·離六事更無眾生</b>——答語不否認六根各自的功能作用（見聞嗅嘗覺知），卻指出這些作用之外，並無另一個獨立自存的「眾生」或「我」在背後操縱，外道正是誤將六根功能本身執為能知能受的實我。</td></tr><tr><td class="bh14p10-src">譬如一長老大德比丘，人謂是阿羅漢，多致供養。其後病死，諸弟子懼失供養故，夜盜出之；於其臥處安施被枕，令如師在，其狀如臥。人來問疾：「師在何許？」諸弟子言：「汝不見床上被枕耶？」愚者不審察之，謂師病臥，大送供養而去，如是非一。復有智人來而問之，諸弟子亦如是答。智人言：「我不問被枕、床褥，我自求人。」發被求之，竟無人可得。除六事相，更無我人；知者、見者，亦復如是。</td><td>好比有一位年高德劭的長老比丘，人們都認為他已證得阿羅漢果，因此供養特別豐厚。後來這位比丘生病去世了，他的徒弟們害怕因此失去供養，就在夜裡偷偷把遺體運走，並在原本的臥榻上安放好被褥枕頭，佈置得像是師父還躺在那裡睡覺的樣子。有人來探病，問道：「師父在哪裡呢？」徒弟們回答：「您沒看見床上的被子枕頭嗎？」愚昧的人不加詳察，以為師父只是臥病在床，於是送上豐厚的供養便離開了，像這樣的人不只一個。後來又有一位有智慧的人前來探問，徒弟們同樣如此回答。這位智者卻說：「我問的不是被子枕頭、床鋪臥具，我要找的是那個人。」於是掀開被子尋找，結果根本找不到任何人。除了眼耳鼻舌身意這六種作用的相貌之外，根本沒有一個獨立的「我」或「人」存在；所謂「能知者、能見者」，道理也是同樣如此。</td><td class="bh14p10-guan"><b>掀被求人喻·大智度論最著名的破我譬喻</b>——此一「掀被求人」公案是漢傳中觀文獻中最富畫面感的破我譬喻：愚人滿足於表相的被枕擺設，智者卻直探「人」本身而終不可得，象徵般若慧眼穿透五蘊假合的表相、照見其中並無恆常主宰的自我。</td></tr><tr><td class="bh14p10-src">復次，若眾生於五眾因緣有者，五眾無常，眾生亦應無常。何以故？因果相似故；若眾生無常，則不至後世。</td><td>再者，如果說眾生是由五蘊因緣而有的，那麼五蘊既是無常變異的，眾生也應當是無常的。這是什麼緣故呢？因為因與果的體性應當相似的緣故；如果眾生是無常的，那麼造業之後就不能延續到後世受報了。</td><td class="bh14p10-guan"><b>因果相似律·無常眾生不能成立業果相續</b>——此段以「因果體性相似」的原則推出：若眾生隨五蘊剎那生滅，則善惡業報將無所依附而斷滅，此段預留了下文「假名相續」解答此一質疑的伏筆。</td></tr><tr><td class="bh14p10-src">復次，若如汝言「眾生從本已來常有」，若爾者，眾生應生五眾，五眾不應生眾生；今五眾因緣生眾生名字，無智之人逐名求實。以是故，眾生實無；若無眾生，亦無殺罪；無殺罪故，亦無持戒。</td><td>再者，如果照你所說「眾生從根本以來就恆常存在」，那麼應當是眾生產生五蘊，而不是五蘊產生眾生；但事實上是五蘊和合的因緣才產生了「眾生」這個假名，沒有智慧的人卻依循著這個假名去追求其中有一個真實的本體。因此可知，眾生實際上是沒有的；既然沒有真實的眾生，也就沒有真實的殺生之罪；既然沒有殺罪，當然也就沒有真實可持的「戒」。</td><td class="bh14p10-guan"><b>假名施設·逐名求實的顛倒</b>——此段精確點出凡夫的根本謬誤：五蘊和合施設「眾生」之假名在先，凡夫卻反過來循名覓實，妄執名言背後必有一個真實體性，龍樹在此揭示「假名」與「實有」的顛倒關係，並推出「無眾生·無殺罪·無持戒」三者皆是相待假立的因果鏈。</td></tr><tr><td class="bh14p10-src">復次，是五眾深入觀之，分別知空，如夢所見，如鏡中像；若殺夢中所見及鏡中像，無有殺罪。殺五陰空相眾生，亦復如是。</td><td>再者，若能深入觀察這五蘊，透過分別智慧了知它本性是空的，就如同夢中所見的境界、鏡中所現的影像一般。如果殺害的是夢中所見或鏡中影像中的人，並不會有真正的殺生之罪。殺害本質為五蘊空相的「眾生」，道理也是同樣如此。</td><td class="bh14p10-guan"><b>如夢如鏡喻·緣起性空非斷滅空</b>——「如夢所見、如鏡中像」是大乘經論描述緣起性空最常見的譬喻，強調五蘊眾生雖空而非虛無斷滅，此空是觀待因緣和合的假有之空，故雖空而因果宛然，非同外道斷見。</td></tr><tr><td class="bh14p10-src">復次，若人不樂罪、貪著無罪，是人見破戒罪人則輕慢，見持戒善人則愛敬；如是持戒，則是起罪因緣。</td><td>再者，如果有人厭惡罪業、卻又貪著執取「無罪」這件事，這樣的人見到破戒犯罪的人便心生輕慢，見到持戒的善人便心生偏愛恭敬；像這樣去持戒，反而成為造作新罪業的因緣。</td><td class="bh14p10-guan"><b>空觀不壞戒行·警惕以空為藉口的分別愛憎</b>——龍樹在闡明「罪不可得」之後，立即警誡不可將此空觀轉為輕慢持戒者、偏愛破戒者的藉口，強調畢竟空與世俗持戒行儀二諦並行不悖，此為全論「空有無礙」的一貫立場。</td></tr><tr><td class="bh14p10-src">以是故言「於罪、不罪不可得故，應具足尸羅波羅蜜」。</td><td>因此說「由於罪與不罪都了不可得的緣故，應當具足圓滿尸羅波羅蜜（持戒度）」。</td><td class="bh14p10-guan"><b>總結：罪福不可得故尸羅波羅蜜得以圓滿</b>——此句是品9-10「眾生不可得」整條論證脈絡的總結句，點出唯有徹見罪與不罪二者皆空，方能超越「著相持戒」與「撥無因果」兩種偏執，圓滿成就尸羅波羅蜜（持戒度）之究竟義。</td></tr></tbody></table><p class="bh14p10-note">卷十四第10品「中觀辯證與超越結構」原文·白話·中觀三欄對照，以外人「五指喻拳」問難眾生確實存在起，答以離六事更無眾生、外道倒見，續以大智度論最著名的「掀被求人」譬喻直探我不可得，再以因果相似律、假名逐實之顛倒、如夢如鏡喻、空觀不壞戒行警誡層層申論，末以「罪不可得故應具足尸羅波羅蜜」總收「眾生不可得」全脈絡並回扣持戒波羅蜜。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：五指喻拳眾生假名詰問　掀被求人破我譬喻　假名施設逐名求實顛倒　空觀不壞戒行罪福不可得</p></div></div>
+<script id="wy-bh14p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p10Btn"),BOX=document.getElementById("bh14p10Box"),MODAL=document.getElementById("bh14p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p10Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P10:END-->
 </body>
 </html>
