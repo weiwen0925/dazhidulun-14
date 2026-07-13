@@ -2023,5 +2023,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P1:END-->
+<!--WY-BH14P2:BEGIN-->
+<style id="wy-bh14p2-css">
+.bh14p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p2-fabbox.show{display:block;}
+.bh14p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p2-modal.open{display:flex;}
+.bh14p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p2-close:hover{background:#dde2e6;}
+.bh14p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p2-tbl th,.bh14p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p2-tbl thead th:nth-child(1){width:32%;}.bh14p2-tbl thead th:nth-child(2){width:41%;}.bh14p2-tbl thead th:nth-child(3){width:27%;}
+.bh14p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p2-guan{background:#eef2f5;color:#37505f;}
+.bh14p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p2-tbl tbody tr:nth-child(even) td.bh14p2-guan{background:#e8eef2;}
+.bh14p2-tbl tbody tr:nth-child(even) td.bh14p2-qa{background:#e7ecdb;}
+.bh14p2-tbl b{color:#8b2500;}
+.bh14p2-guan b{color:#2f6b5a;}
+.bh14p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p2-fabbox{right:14px;}.bh14p2-tbl{font-size:11px;}.bh14p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p2-fabbox" id="bh14p2Box"><button class="bh14p2-btn" id="bh14p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p2-ic">譯</span><span class="bh14p2-ls"><span class="bh14p2-l1">本品 · 原文·白話·中觀</span><span class="bh14p2-l2">白話翻譯表</span></span></button></div><div class="bh14p2-modal" id="bh14p2Modal" role="dialog" aria-modal="true"><div class="bh14p2-card"><button class="bh14p2-close" id="bh14p2Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第2品 白話翻譯表（持戒生戒）</h3><p class="sub">大智度論卷十四·持戒生戒 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p2-tbl"><caption>持戒生戒 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p2-src">云何持戒能生戒？因五戒得沙彌戒，因沙彌戒得律儀戒，因律儀戒得禪定戒，因禪定戒得無漏戒，是為戒生戒。</td><td>什麼叫做「持戒能生戒」呢？因為受持五戒，而得以進一步受持沙彌戒；因為受持沙彌戒，而得以進一步受持（具足）律儀戒；因為受持律儀戒，而得以進一步獲得禪定戒；因為獲得禪定戒，而得以進一步獲得無漏戒——這就是所謂的「戒生戒」。</td><td class="bh14p2-guan"><b>五階階梯·由粗入細的戒體昇華</b>——此段鋪陳出一條「五戒→沙彌戒→律儀戒→禪定戒→無漏戒」的完整階梯，每一階都是下一階得以生起的因，顯示戒體並非一次到位的靜態規範，而是可以隨修行深化而層層轉化、逐步昇華的動態歷程，為下文探討「有漏的規範如何孕育無漏的解脫」立下架構基礎。</td></tr><tr><td class="bh14p2-src">觀此戒相從何而有，知從眾罪而生；若無眾罪，則亦無戒。</td><td>觀察這個「戒相」究竟是從什麼地方而有的，便可知道它其實是因應種種罪業而產生的；如果本來沒有種種罪業，那麼也就不會有所謂的「戒」。</td><td class="bh14p2-guan"><b>戒是對治性的相待假·非本有實法</b>——此句直探戒相的緣起本質：戒之所以安立，完全是「對治」罪業而有的相待施設（若無罪，則戒亦無所對治而不必安立），並非戒本身有獨立不變的自性；此即中觀「對治性」相待假的具體示範，為下文「藥與病的相對矩陣」張本。</td></tr><tr><td class="bh14p2-src">五眾深入觀之，分別知空，如夢所見。</td><td>對於色、受、想、行、識這五眾（五蘊），深入觀照它們，分別了知其本性皆空，就如同夢中所見的境象一般（虛幻不實）。</td><td class="bh14p2-guan"><b>五蘊如夢·性空的終極觀照</b>——以「如夢所見」總攝對五蘊的空觀，呼應前文「戒是對治性假法」的洞見：不僅戒相因罪而有、非有自性，就連受戒、持戒的主體（五蘊和合之身心）本身也如夢如幻、了不可得，將全品的中觀觀照從「戒法本身」推進到「持戒者自身」，二重空觀相互呼應，收束全品心要。</td></tr></tbody></table><p class="bh14p2-note">卷十四第2品「持戒生戒」原文·白話·中觀三欄對照，鋪陳「因五戒得沙彌戒、因沙彌戒得律儀戒、因律儀戒得禪定戒、因禪定戒得無漏戒」的戒生戒五階階梯，續以中觀觀門剖析戒相「從眾罪而生」的對治性相待假，終以「五眾如夢」總攝性空觀照，收束全品心要。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：戒生戒的五階階梯　戒是對治性相待假　五蘊如夢性空的終極觀照</p></div></div>
+<script id="wy-bh14p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p2Btn"),BOX=document.getElementById("bh14p2Box"),MODAL=document.getElementById("bh14p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p2Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P2:END-->
 </body>
 </html>
