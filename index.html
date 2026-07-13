@@ -2074,5 +2074,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P2:END-->
+<!--WY-BH14P3:BEGIN-->
+<style id="wy-bh14p3-css">
+.bh14p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p3-fabbox.show{display:block;}
+.bh14p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p3-modal.open{display:flex;}
+.bh14p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p3-close:hover{background:#dde2e6;}
+.bh14p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p3-tbl th,.bh14p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p3-tbl thead th:nth-child(1){width:32%;}.bh14p3-tbl thead th:nth-child(2){width:41%;}.bh14p3-tbl thead th:nth-child(3){width:27%;}
+.bh14p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p3-guan{background:#eef2f5;color:#37505f;}
+.bh14p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p3-tbl tbody tr:nth-child(even) td.bh14p3-guan{background:#e8eef2;}
+.bh14p3-tbl tbody tr:nth-child(even) td.bh14p3-qa{background:#e7ecdb;}
+.bh14p3-tbl b{color:#8b2500;}
+.bh14p3-guan b{color:#2f6b5a;}
+.bh14p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p3-fabbox{right:14px;}.bh14p3-tbl{font-size:11px;}.bh14p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p3-fabbox" id="bh14p3Box"><button class="bh14p3-btn" id="bh14p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p3-ic">譯</span><span class="bh14p3-ls"><span class="bh14p3-l1">本品 · 原文·白話·中觀</span><span class="bh14p3-l2">白話翻譯表</span></span></button></div><div class="bh14p3-modal" id="bh14p3Modal" role="dialog" aria-modal="true"><div class="bh14p3-card"><button class="bh14p3-close" id="bh14p3Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第3品 白話翻譯表（持戒生檀·布施）</h3><p class="sub">大智度論卷十四·持戒生檀·布施 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p3-tbl"><caption>持戒生檀·布施 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p3-src">云何持戒能生於檀？</td><td>為什麼持戒能夠生出布施（檀波羅蜜）呢？</td><td class="bh14p3-guan"><b>破題：持戒與布施的表面對立</b>——持戒（消極防非止惡）與布施（積極利他予樂）表面上是兩種相反方向的修行，此問直接叩問二者何以相生，逗出下文「不侵、不害、供養」三重財法無畏施皆從持戒一心而出的深層義理，預示戒行本身即是最初的布施。</td></tr><tr><td class="bh14p3-src">檀有三種：一者、財施，二者、法施，三者、無畏施。持戒自撿，不侵一切眾生財物，是名財施。眾生見者，慕其所行，又為說法，令其開悟。又自思惟：我當堅持淨戒，與一切眾生作供養福田，令諸眾生得無量福。如是種種，名為法施。一切眾生皆畏於死，持戒不害，是則無畏施。</td><td>布施有三種：第一是財施，第二是法施，第三是無畏施。持戒之人自我約束檢束，不侵犯一切眾生的財物，這就叫做財施。眾生見到這樣的行持，仰慕而想效法，於是持戒者又為他們說法，使他們開悟，這也是法施的一種；持戒者又自己思惟：我應當堅持清淨戒律，作為一切眾生供養培福的福田，使眾生獲得無量福報，像這樣種種作為，都稱為法施。一切眾生都害怕死亡，持戒之人不侵害眾生的生命，這就是無畏施。</td><td class="bh14p3-guan"><b>一戒三施·消極不害即是積極給予</b>——此段是全品邏輯核心：財施、法施、無畏施三者看似需要「主動給予」，論主卻證明「不侵、說法開悟、不害」這三種持戒的自然結果，本身就分別滿足了三種布施的定義；持戒不是布施的準備工作，而是布施的實質內容本身，二元對立自此消融。</td></tr><tr><td class="bh14p3-src">復次，菩薩自念：「我當持戒，以此戒報，為諸眾生作轉輪聖王、或作閻浮提王、若作天王，令諸眾生滿足於財，無所乏短；然後坐佛樹下，降伏魔王，破諸魔軍，成無上道，為諸眾生說清淨法，令無量眾生度老、病、死海。」</td><td>再者，菩薩自己思惟：「我應當持戒，憑藉這持戒的果報，為眾生示現作轉輪聖王，或作閻浮提王，或作天王，使眾生在財物上得到滿足，沒有絲毫匱乏；然後再坐在菩提樹下，降伏魔王，摧破一切魔軍，成就無上佛道，為眾生宣說清淨的佛法，使無量眾生得以度脫老、病、死的苦海。」</td><td class="bh14p3-guan"><b>持戒果報的時間縱深·先財施後法施的長遠戰略</b>——此段將布施的果效延展至未來世：菩薩以持戒為因，先感得世間王位以滿足眾生物質所需（財施的極致），再以成佛說法度脫生死（法施的究竟），顯示持戒所生的布施不僅是當下的不侵不害，更是貫通三世、由淺入深的完整度生藍圖。</td></tr><tr><td class="bh14p3-src">是為持戒因緣生檀波羅蜜。</td><td>這就是由持戒的因緣而出生檀波羅蜜（布施波羅蜜）。</td><td class="bh14p3-guan"><b>全品總收·戒為施因</b>——一句總結全品：財、法、無畏三施與未來王果、佛果的法施，皆從「持戒」一因流出，印證了「持戒即施」並非比喻，而是嚴密的因果邏輯，為卷十四後續「持戒生忍辱」「持戒生精進」等各品立下同一論證範式。</td></tr></tbody></table><p class="bh14p3-note">卷十四第3品「持戒生檀·布施」原文·白話·中觀三欄對照，以「云何持戒能生於檀」發問起，依次演繹財施（不侵眾生財物）、法施（身教兼說法開悟）、無畏施（持戒不害）三施皆從一戒而生，再以菩薩持戒感轉輪聖王果報、先滿眾生財而後說法度生死海，總收於「持戒因緣生檀波羅蜜」。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：一戒三施　消極不害即是積極給予　持戒果報的時間縱深　戒為施因</p></div></div>
+<script id="wy-bh14p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p3Btn"),BOX=document.getElementById("bh14p3Box"),MODAL=document.getElementById("bh14p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p3Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P3:END-->
 </body>
 </html>
