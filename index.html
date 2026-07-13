@@ -2482,5 +2482,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P10:END-->
+<!--WY-BH14P11:BEGIN-->
+<style id="wy-bh14p11-css">
+.bh14p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p11-fabbox.show{display:block;}
+.bh14p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p11-modal.open{display:flex;}
+.bh14p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p11-close:hover{background:#dde2e6;}
+.bh14p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p11-tbl th,.bh14p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p11-tbl thead th:nth-child(1){width:32%;}.bh14p11-tbl thead th:nth-child(2){width:41%;}.bh14p11-tbl thead th:nth-child(3){width:27%;}
+.bh14p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p11-guan{background:#eef2f5;color:#37505f;}
+.bh14p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p11-tbl tbody tr:nth-child(even) td.bh14p11-guan{background:#e8eef2;}
+.bh14p11-tbl tbody tr:nth-child(even) td.bh14p11-qa{background:#e7ecdb;}
+.bh14p11-tbl b{color:#8b2500;}
+.bh14p11-guan b{color:#2f6b5a;}
+.bh14p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p11-fabbox{right:14px;}.bh14p11-tbl{font-size:11px;}.bh14p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p11-fabbox" id="bh14p11Box"><button class="bh14p11-btn" id="bh14p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p11-ic">譯</span><span class="bh14p11-ls"><span class="bh14p11-l1">本品 · 原文·白話·中觀</span><span class="bh14p11-l2">白話翻譯表</span></span></button></div><div class="bh14p11-modal" id="bh14p11Modal" role="dialog" aria-modal="true"><div class="bh14p11-card"><button class="bh14p11-close" id="bh14p11Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第11品 白話翻譯表（釋初品中羼提波羅蜜義·忍辱）</h3><p class="sub">大智度論卷十四·釋初品中羼提波羅蜜義（忍辱） · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p11-tbl"><caption>釋初品中羼提波羅蜜義（忍辱） · 原文｜白話翻譯｜中觀概念（共14段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p11-src">「心不動故，應具足羼提波羅蜜。」</td><td>（般若經文）「因為心不隨境動搖的緣故，應當具足圓滿羼提波羅蜜（忍辱度）。」</td><td class="bh14p11-guan"><b>經文立宗·忍辱度以心不動為體</b>——本品以《般若經》原文「心不動」三字標舉羼提波羅蜜的核心體性，不動搖之心並非麻木不仁的壓抑，而是甚深智慧觀照下自然呈現的安忍，為以下層層剖析立下總綱。</td></tr><tr><td class="bh14p11-qa">問曰：云何名羼提？</td><td>問曰：什麼叫做「羼提」呢？</td><td class="bh14p11-guan"><b>釋名之問·音譯術語的正名詰問</b>——此問開啟典型的譯經釋名體例，先由「羼提」此一梵語音譯詞引發「其義為何」的追問，為下文的義譯解答鋪路。</td></tr><tr><td class="bh14p11-qa">答曰：羼提，秦言「忍辱」。</td><td>答曰：「羼提」是梵語音譯，用秦地漢語來說，意思就是「忍辱」。</td><td class="bh14p11-guan"><b>音譯與義譯的對應·羼提即忍辱</b>——此答以鳩摩羅什所處秦地漢語譯出義理「忍辱」，確立本品核心術語「羼提」與漢文「忍辱」之間的名實對應，為全品定調。</td></tr><tr><td class="bh14p11-src">忍辱有二種：生忍、法忍。菩薩行生忍，得無量福德；行法忍，得無量智慧。福德、智慧二事具足故，得如所願。</td><td>忍辱分為兩種：生忍（對眾生的忍辱）與法忍（對諸法實相的忍辱）。菩薩若能修行生忍，能獲得無量的福德；若能修行法忍，能獲得無量的智慧。由於福德與智慧這兩件事都具足圓滿的緣故，便能成就一切所願求的果證。</td><td class="bh14p11-guan"><b>忍辱二分·福德與智慧雙運</b>——龍樹將忍辱析為「生忍」（於眾生境界安忍不瞋，成就福德資糧）與「法忍」（於諸法實相安忍不動，成就智慧資糧）二分，此二分架構是全品展開的總骨架：後文的心不動、畢竟空等偏屬法忍層面，忍受惡口刀杖等偏屬生忍層面，二者福慧雙運方能圓滿波羅蜜。</td></tr><tr><td class="bh14p11-src">「譬如人有目、有足，隨意能到。」</td><td>（譬喻）「就好比一個人既有眼睛、又有雙腳，便能隨心所欲地到達想去的地方。」</td><td class="bh14p11-guan"><b>目足喻·法忍如目·生忍如足</b>——此譬喻以「眼睛引導方向、雙足提供行動力」比擬法忍與生忍的功能性依存關係：法忍如眼，能以智慧照見方向；生忍如足，能以福德承載前行；二者缺一，修行便如盲人或跛者，無法真正到達彼岸。</td></tr><tr><td class="bh14p11-src">菩薩若遇惡口罵詈，若刀杖所加，思惟知罪、福業因緣諸法，內、外畢竟空，無我、無我所；以三法印印諸法故，力雖能報，不生惡心，不起惡口業；爾時，心數法生，名為忍。</td><td>菩薩如果遭遇他人惡言辱罵，或是遭受刀杖等加害，這時便思惟觀照罪業與福業等一切因緣所生之法，了知內在的身心與外在的境界畢竟空寂，沒有一個真實的「我」，也沒有真實屬於「我」的東西；以「諸行無常、諸法無我、涅槃寂靜」這三法印印證一切法的緣故，即使自己有能力回擊報復，也不生起瞋恨的惡心，也不發起惡口相向的言語行為；就在這個時候，一種特殊的心所法產生了，這就稱為「忍」。</td><td class="bh14p11-guan"><b>三法印印證·忍由智慧觀照而生非由壓抑</b>——此段是本品最核心的心理與義理機制：忍辱並非單純的隱忍克制，而是以「罪福業因緣」「內外畢竟空」「三法印」層層觀照後，自然於心中生起的一種主動心所法，故忍是智慧觀照的產物，而非情緒壓抑的結果，這正是「法忍」義的具體展開。</td></tr><tr><td class="bh14p11-src">「得是忍法故，忍智牢固；譬如畫彩，得膠則堅著。」</td><td>（譬喻）「獲得這種忍法的緣故，忍與智慧便牢固不動搖；就好比繪畫用的彩色顏料，加入膠質之後就能牢牢地附著在畫面上一樣。」</td><td class="bh14p11-guan"><b>膠畫喻·忍為固著智慧與善法的接著劑</b>——此譬喻精妙地點出忍辱在整個修行體系中的功能定位：智慧與善法猶如未加膠質的顏料，容易脫落散失，唯有「忍」如同膠質一般，能將智慧觀照與善法功德牢牢固著於心識之中，使其不因外境違逆而消散。</td></tr><tr><td class="bh14p11-src">有人言：「善心有二種：有麤，有細；麤名忍辱，細名禪定。未得禪定心樂，能遮眾惡，是名忍辱；心得禪定樂，不為眾惡，是名禪定。」</td><td>有人說：「善心可分為兩種：有粗的，也有細的；粗的稱為忍辱，細的稱為禪定。尚未獲得禪定之樂時，仍能遮止各種惡念惡行，這就稱為忍辱；已經獲得禪定之樂之後，自然不會造作各種惡行，這就稱為禪定。」</td><td class="bh14p11-guan"><b>忍辱與禪定的粗細之辨</b>——此為阿毘曇論師的分析角度：忍辱與禪定同屬「善心」範疇，僅是精細程度有別——忍辱是尚未得定之前，憑藉意志力遮止惡念的階段；禪定則是已得禪悅之樂後，自然不起惡念的更深階段，二者呈現修行次第上的粗細承接關係。</td></tr><tr><td class="bh14p11-src">是忍，是心數法，與心相應，隨心行。非業，非業報，隨業行。</td><td>這種「忍」，屬於心所法，與心識相應而生起，隨著心識而運作。它不是「業」本身，也不是「業的果報」，而是伴隨著業而運作的心理作用。</td><td class="bh14p11-guan"><b>阿毘曇範疇定位·忍屬心所非業非果</b>——此段以阿毘曇的法相分類體系，精確界定「忍」在諸法範疇中的位置：它是與心識相應俱起的「心所法」，既非造作善惡的「業」本身，也非業力所招感的「果報」，而是隨業運作的心理功能，此一分判展現大智度論融攝阿毘曇法相以闡釋大乘義理的特色。</td></tr><tr><td class="bh14p11-src">有人言：「二界繫。」有人言：「但欲界繫，或不繫。色界無外惡可忍故。」</td><td>有人說：「忍辱是被欲界與色界這兩界所繫縛的。」也有人說：「忍辱只被欲界所繫縛，或者根本不被三界所繫縛。因為色界之中沒有外在的惡緣需要忍受的緣故。」</td><td class="bh14p11-guan"><b>三界繫屬之辨·忍辱與欲界惡緣的對應</b>——此段討論忍辱在三界中的歸屬範圍，由於色界眾生已離欲界粗重的外在惡緣（如惡罵刀杖），故有論師主張忍辱主要繫屬於欲界，或於清淨無漏位中根本不被繫縛，展現部派論師對修行境界細膩的分層考察。</td></tr><tr><td class="bh14p11-src">「亦有漏、亦無漏，凡夫、聖人俱得故。」</td><td>（忍辱）「既可以是有漏的，也可以是無漏的，因為凡夫與聖者都能夠獲得這種忍辱的緣故。」</td><td class="bh14p11-guan"><b>有漏無漏皆通·忍辱貫通凡聖二位</b>——此段指出忍辱並非聖者專屬的無漏功德，凡夫透過世俗善心的鍛鍊同樣能夠成就有漏的忍辱，而聖者於無漏智慧中所行之忍則屬無漏，忍辱因而成為連接凡夫修學與聖者證量的橋樑德目。</td></tr><tr><td class="bh14p11-src">「障己心、他心不善法，故名為善。」</td><td>（忍辱之所以稱為「善」）「因為它能夠遮障、阻止自己內心與他人內心生起不善之法，所以稱之為善。」</td><td class="bh14p11-guan"><b>善之定義·雙向遮止自他不善心</b>——此段界定忍辱何以被歸類為「善法」：它不僅遮止自己內心瞋恚等不善心的生起，同時也能感化、遮止對方（加害者）內心不善之法的持續造作，體現忍辱兼具自利與利他的雙向善德。</td></tr><tr><td class="bh14p11-src">「善故，或思惟斷，或不斷。」</td><td>（忍辱）「因為屬於善法的緣故，有的忍辱是透過思惟修（修道位）才能斷除煩惱的，有的則不屬於斷除煩惱的範疇。」</td><td class="bh14p11-guan"><b>思惟斷與非斷之別·忍辱在修道位中的定位</b>——此段以部派論書「見道所斷、修道所斷、非所斷」的修道位階體系，說明忍辱因所依止的心念差異，有的屬於修道位中透過反覆思惟才能斷除的煩惱對治法，有的則不屬於斷除煩惱的範疇，展現忍辱在整個修道體系中的多層次定位。</td></tr><tr><td class="bh14p11-src">「如是等種種，阿毘曇廣分別。」</td><td>（總結）「像這樣種種關於忍辱的法相分析，在阿毘曇論書中有更為詳盡廣泛的分別解說。」</td><td class="bh14p11-guan"><b>總收全品·指向阿毘曇的廣論傳統</b>——此句是全品法相分析部分的總結語，表明龍樹在此僅提綱挈領地列出忍辱的種種法相定位，若欲窮盡精細分析，仍須參閱阿毘曇論書的廣泛論述，展現大智度論融貫大小乘、以精簡文字統攝廣博法義的一貫風格。</td></tr></tbody></table><p class="bh14p11-note">卷十四第11品「釋初品中羼提波羅蜜義」原文·白話·中觀三欄對照，以般若經文「心不動故應具足羼提波羅蜜」立宗，次釋名（羼提秦言忍辱），分判生忍法忍二種，以目足喻明二者功能依存，再以「思惟罪福因緣·內外畢竟空·三法印印證」說明忍由智慧觀照而生，續以膠畫喻明忍能固著智慧善法，末以阿毘曇法相（麤細·心所定位·界繫·漏無漏·善義·斷除）廣分別忍辱之體性。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：心不動即羼提波羅蜜　生忍法忍福慧雙運　三法印印證忍由智慧觀照而生　膠畫喻忍固著智慧善法</p></div></div>
+<script id="wy-bh14p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p11Btn"),BOX=document.getElementById("bh14p11Box"),MODAL=document.getElementById("bh14p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p11Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P11:END-->
 </body>
 </html>
