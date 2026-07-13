@@ -2227,5 +2227,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P5:END-->
+<!--WY-BH14P6:BEGIN-->
+<style id="wy-bh14p6-css">
+.bh14p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p6-fabbox.show{display:block;}
+.bh14p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p6-modal.open{display:flex;}
+.bh14p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p6-close:hover{background:#dde2e6;}
+.bh14p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p6-tbl th,.bh14p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p6-tbl thead th:nth-child(1){width:32%;}.bh14p6-tbl thead th:nth-child(2){width:41%;}.bh14p6-tbl thead th:nth-child(3){width:27%;}
+.bh14p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p6-guan{background:#eef2f5;color:#37505f;}
+.bh14p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p6-tbl tbody tr:nth-child(even) td.bh14p6-guan{background:#e8eef2;}
+.bh14p6-tbl tbody tr:nth-child(even) td.bh14p6-qa{background:#e7ecdb;}
+.bh14p6-tbl b{color:#8b2500;}
+.bh14p6-guan b{color:#2f6b5a;}
+.bh14p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p6-fabbox{right:14px;}.bh14p6-tbl{font-size:11px;}.bh14p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p6-fabbox" id="bh14p6Box"><button class="bh14p6-btn" id="bh14p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p6-ic">譯</span><span class="bh14p6-ls"><span class="bh14p6-l1">本品 · 原文·白話·中觀</span><span class="bh14p6-l2">白話翻譯表</span></span></button></div><div class="bh14p6-modal" id="bh14p6Modal" role="dialog" aria-modal="true"><div class="bh14p6-card"><button class="bh14p6-close" id="bh14p6Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第6品 白話翻譯表（持戒生禪定）</h3><p class="sub">大智度論卷十四·持戒生禪定 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p6-tbl"><caption>持戒生禪定 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p6-src">云何持戒生禪？</td><td>為什麼持戒能夠出生禪定呢？</td><td class="bh14p6-guan"><b>破題：從約束到寂止的因果之問</b>——此問直探「戒」與「禪」看似異質（一屬行為規範，一屬心境安定）卻能相生的機制，下文即以七段譬喻逐層揭示：持戒如何為禪定掃除障礙、鋪設階梯。</td></tr><tr><td class="bh14p6-src">一、人有三業作諸善，若身、口業善，意業自然入善；譬如曲草生於麻中，不扶自直。持戒之力，能羸諸結使。云何能羸？若不持戒，瞋恚事來，殺心即生；若欲事至，婬心即成。若持戒者，雖有微瞋，不生殺心；雖有婬念，婬事不成，是為持戒能令諸結使羸。諸結使羸，禪定易得。譬如老病失力，死事易得；結使羸故，禪定易得。</td><td>人有身、口、意三種業行都能造作善法：如果身業、口業行善，意業自然也會跟著趨向善——就像彎曲的雜草長在麻田之中，不必扶正也會自然變直。持戒的力量，能夠使種種煩惱結使變得羸弱衰微。為什麼能使它們羸弱呢？如果不持戒，瞋恨的境緣一來，殺害之心立刻生起；如果貪欲的境緣一到，淫慾之心立刻成就。如果是持戒的人，即使生起微小的瞋恨，也不會生出殺心；即使生起淫念，淫事也不會真正成就——這就是持戒能使種種結使羸弱的道理。結使一旦羸弱，禪定就容易獲得，就像人年老生病、氣力衰退，死亡便容易到來一樣；結使羸弱了，禪定也就容易獲得了。</td><td class="bh14p6-guan"><b>麻中曲草·環境同化與行為節流雙機制</b>——此段以「曲草不扶自直」點出身口業端正能自然帶動意業趨善的滲透效應，再以「瞋恨無由生殺心、貪欲無由成淫事」說明持戒截斷了煩惱從生起到壯大的行為出口，如同斷絕結使的養分，使其如老病失力般衰弱，禪定自然易得——此即「不消滅煩惱、而使其失去憑藉」的中道對治法。</td></tr><tr><td class="bh14p6-src">二、復次，人心未息，常求逸樂；行者持戒，棄捨世福，心不放逸，是故易得禪定。</td><td>再者，凡夫的心念從未止息，總是不斷追求安逸享樂；修行人持戒之後，捨棄了世間的福樂追求，心不再放逸散亂，因此容易獲得禪定。</td><td class="bh14p6-guan"><b>阻斷外部擾動源</b>——凡夫心之所以躁動不安，根源在於不斷向外攀緣逸樂；持戒等於主動棄捨了擾動的來源，而非事後壓制已生的波瀾，這正是「防患於未然」的修行策略。</td></tr><tr><td class="bh14p6-src">三、復次，持戒之人，得生人中，次生六欲天上，次至色界，若破色相生無色界；持戒清淨，斷諸結使，得阿羅漢道；大心持戒，愍念眾生，是為菩薩。</td><td>再者，持戒的人，可以得生於人道之中，其次能生於六欲天上，再進一步可生於色界天，若能破除對色相的執著，還能生於無色界；若持戒清淨，斷盡種種煩惱結使，便能證得阿羅漢道；若以廣大之心持戒，並悲愍憐念一切眾生，這就是菩薩了。</td><td class="bh14p6-guan"><b>持戒果報的次第展開·從人天到菩薩</b>——此段依持戒的深淺與發心的廣狹，展開一條由人天善趣、至色無色界、至阿羅漢解脫、乃至菩薩大心的完整果報光譜，說明同一「持戒」之因，會因心量與智慧的不同層次，結出截然不同的果實。</td></tr><tr><td class="bh14p6-src">四、復次，戒為撿麁，禪為攝細。</td><td>再者，戒是用來收攝約束粗顯的身口惡行，禪則是用來攝持收攏微細的意念妄動。</td><td class="bh14p6-guan"><b>粗細二階·戒禪分工的結構定理</b>——此句以最精簡的語言宣告全品的結構定理：身口之妄動屬「粗」，意念之妄動屬「細」，戒與禪各自對治不同粒度的煩惱，缺一不可。</td></tr><tr><td class="bh14p6-src">五、復次，戒攝身、口，禪止亂心；如人上屋，非梯不昇，不得戒梯，禪亦不立。</td><td>再者，戒律收攝的是身業與口業，禪定止息的是散亂的心念；這就像人要登上屋頂，沒有梯子就無法攀升一樣——得不到持戒這座階梯，禪定也就無從建立。</td><td class="bh14p6-guan"><b>階梯與屋頂喻·次第性的嚴格宣告</b>——此喻以「非梯不昇」明示戒與禪之間存在嚴格的次第關係：粗重的身口妄動若未先降伏，意識便無餘力處理微細的心念，戒是禪定得以建立的必要基礎，而非可有可無的預備動作。</td></tr><tr><td class="bh14p6-src">六、復次，破戒之人，結使風強，散亂其心；其心散亂，則禪不可得。持戒之人，煩惱風軟，心不大散，禪定易得。</td><td>再者，破戒的人，煩惱結使的風力強勁，使他的心散亂不安；心一旦散亂，禪定便無從獲得。持戒的人，煩惱之風變得柔軟微弱，心不會大幅散亂，因此禪定容易獲得。</td><td class="bh14p6-guan"><b>煩惱風喻·水面平靜方能映照</b>——以「結使風強／煩惱風軟」對舉，說明心如水面，唯有煩惱之風平息，心水才能靜止澄明，禪定正是心水止息波動後的自然映現，呼應全品「持戒削弱煩惱、煩惱減弱則定易生」的核心因果鏈。</td></tr><tr><td class="bh14p6-src">七、如是等種種因緣，是為持戒生禪波羅蜜。</td><td>像這樣種種因緣道理，就是持戒能夠出生禪波羅蜜的道理。</td><td class="bh14p6-guan"><b>全品總收·七段歸於一義</b>——此句總結前七段譬喻（曲草、老病、世福、粗細、階梯、風軟等），無論從哪個角度切入，最終都指向同一個結論：持戒是禪定得以生起的根本助緣，二者環環相扣、缺一不可。</td></tr></tbody></table><p class="bh14p6-note">卷十四第6品「持戒生禪定」原文·白話·中觀三欄對照，以「云何持戒生禪」發問起，次以麻中曲草、老病失力、棄捨世福、粗細二階、階梯屋頂、煩惱風軟六重譬喻逐層申明持戒何以能生禪定，末以「如是等種種因緣」總收全品。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：麻中曲草環境同化　老病失力羸諸結使　階梯屋頂次第宣告　煩惱風軟水面澄明</p></div></div>
+<script id="wy-bh14p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p6Btn"),BOX=document.getElementById("bh14p6Box"),MODAL=document.getElementById("bh14p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P6:END-->
 </body>
 </html>
