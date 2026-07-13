@@ -2584,5 +2584,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P12:END-->
+<!--WY-BH14P13:BEGIN-->
+<style id="wy-bh14p13-css">
+.bh14p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p13-fabbox.show{display:block;}
+.bh14p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p13-modal.open{display:flex;}
+.bh14p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p13-close:hover{background:#dde2e6;}
+.bh14p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p13-tbl th,.bh14p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p13-tbl thead th:nth-child(1){width:32%;}.bh14p13-tbl thead th:nth-child(2){width:41%;}.bh14p13-tbl thead th:nth-child(3){width:27%;}
+.bh14p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p13-guan{background:#eef2f5;color:#37505f;}
+.bh14p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p13-tbl tbody tr:nth-child(even) td.bh14p13-guan{background:#e8eef2;}
+.bh14p13-tbl tbody tr:nth-child(even) td.bh14p13-qa{background:#e7ecdb;}
+.bh14p13-tbl b{color:#8b2500;}
+.bh14p13-guan b{color:#2f6b5a;}
+.bh14p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p13-fabbox{right:14px;}.bh14p13-tbl{font-size:11px;}.bh14p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p13-fabbox" id="bh14p13Box"><button class="bh14p13-btn" id="bh14p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p13-ic">譯</span><span class="bh14p13-ls"><span class="bh14p13-l1">本品 · 原文·白話·中觀</span><span class="bh14p13-l2">白話翻譯表</span></span></button></div><div class="bh14p13-modal" id="bh14p13Modal" role="dialog" aria-modal="true"><div class="bh14p13-card"><button class="bh14p13-close" id="bh14p13Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第13品 白話翻譯表（忍辱雙重防禦·女色之害）</h3><p class="sub">大智度論卷十四·忍辱雙重防禦·女色之害 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p13-tbl"><caption>忍辱雙重防禦·女色之害 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p13-qa">問曰：人未得道，衣食為急，云何方便能得忍，心不著、不愛給施之人？</td><td>問曰：一個人如果尚未證得聖道，衣食供養乃是切身急需之事，要用什麼方便法門才能做到安忍，使內心不貪著、不愛戀那些布施供養自己的人呢？</td><td class="bh14p13-guan"><b>凡夫處境的現實詰問·衣食之急與忍辱理想的張力</b>——此問直指凡夫修行者的現實困境：既未證道解脫，衣食供養乃生存所必需，如何在依賴他人供養的同時，又能不生貪著愛戀？此問將前品「軟賊辯」的義理，從抽象原則落實到具體的生活實踐層面。</td></tr><tr><td class="bh14p13-qa">答曰：以智慧力，觀無常相、苦相、無我相，心常厭患……雖得供養，心亦不著。</td><td>答曰：應當運用智慧的力量，觀照一切法的無常之相、苦之相、無我之相，使內心常保持厭離憂患的觀照……如此一來，即使獲得供養，內心也不會生起貪著。</td><td class="bh14p13-guan"><b>三法印觀照·以智慧力總答衣食之問</b>——此答以「無常、苦、無我」三法印的觀照作為總綱性解答，呼應前品「三法印印諸法」的忍辱根本方法，指出對治貪著供養的根本之道，並非壓抑欲望，而是透過如實觀照諸法真實體性，使貪愛自然消解。</td></tr><tr><td class="bh14p13-src">譬如罪人臨當受戮，雖復美味在前，家室勸喻，以憂死故，雖飲食餚膳，不覺滋味；行者亦爾，常觀無常相、苦相，雖得供養，心亦不著。又如麞鹿為虎搏逐，追之不捨，雖得好草、美水飲食，心無染著；行者亦爾，常為無常虎逐不捨須臾，思惟厭患，雖得美味，亦不染著。</td><td>就好比一個即將被處決的死刑犯，即使美味佳餚擺在眼前，家人也在一旁勸他進食，但因為心中滿懷對死亡的憂懼，即使吃著豐盛的飯菜佳餚，也感受不到絲毫滋味；修行人也是如此，經常觀照無常之相、苦之相，即使獲得供養，內心也不會貪著。又好比麞鹿被老虎追捕搏擊，緊追不捨，即使途中遇到鮮美的青草、甘美的泉水，心中也無暇染著留戀；修行人也是如此，經常被「無常」這隻猛虎片刻不離地追逐著，時時思惟厭離憂患，即使得到再美好的滋味，也不會被染著。</td><td class="bh14p13-guan"><b>死囚喻與麞鹿喻·無常觀作為根本對治</b>——此段以兩則生動譬喻具體展開「觀無常」的實踐內涵：死囚喻說明對死亡（無常）的深切憂懼能自然消解對美食（供養）的貪著；麞鹿喻進一步以「被虎追逐」象徵無常如影隨形、片刻不離，修行者若能時時保持這種對無常的警覺觀照，貪愛供養之心自然無從生起。</td></tr><tr><td class="bh14p13-src">復次，若有女人來欲娛樂，誑惑菩薩，菩薩是時當自伏心，忍不令起。</td><td>再者，如果有女子前來以歌舞娛樂等方式，企圖誘惑迷惑菩薩，菩薩在這個時候應當自我降伏內心，安忍而不讓貪欲之心生起。</td><td class="bh14p13-guan"><b>領域轉換·從利養之貪到情欲之迷</b>——此句是全品論述焦點的重要轉折：由前段對治「利養供養」之貪，轉入對治「女色情欲」之迷，二者同屬「軟賊」範疇，卻分屬不同的煩惱領域，此句開啟本品後半段對女色之害的深入解構。</td></tr><tr><td class="bh14p13-src">菩薩是時心不傾動，目不暫視……爾時，密迹金剛力士瞋目叱之：「此是何人？而汝妖媚敢來觸嬈！」</td><td>菩薩在這種時候，內心毫不為之傾動搖擺，眼睛也不曾片刻正視……這時，護法的密迹金剛力士便怒目呵斥那女子：「這裡是什麼地方？你這妖媚的女子竟敢前來觸犯冒犯！」</td><td class="bh14p13-guan"><b>覺者的絕對防禦·內心不動與外在護法的雙重防線</b>——此段描繪菩薩面對魔女誘惑時「心不傾動、目不暫視」的絕對定力，並以密迹金剛力士的怒斥作為外在護法示現，象徵內在智慧觀照與外在護法威德共同構成抵禦情欲誘惑的雙重防線。</td></tr><tr><td class="bh14p13-src">於諸衰中，女衰最重。刀火、雷電、霹靂、怨家、毒蛇之屬，猶可暫近；女人慳妬、瞋諂、妖穢、鬪諍、貪嫉，不可親近……桎梏、枷鎖，閉繫、囹圄，雖曰難解，是猶易開；女鎖繫人，染固根深，無智沒之，難可得脫。</td><td>在種種衰敗禍患之中，「女衰」是最為深重的一種。刀劍、烈火、雷電、霹靂、仇敵、毒蛇這一類的禍害，尚且還可以暫時接近而不受致命傷害；但女人身上的慳吝嫉妒、瞋恨諂媚、妖淫污穢、爭鬥嫉妒等種種過患，卻是絕對不可以親近的……即使是刑具枷鎖、牢獄囚禁，雖然說起來難以解脫，但相較之下還算是容易打開的；而女色對人心的繫縛纏鎖，卻是染著牢固、根深柢固，沒有智慧的人一旦沉沒其中，便極難獲得解脫。</td><td class="bh14p13-guan"><b>女衰最重·系統性破壞的極端定性</b>——此段以強烈的對比修辭，將女色之害定性為「眾衰之中最重者」：物理性的傷害（刀火雷電）僅止於色身，且尚可暫近；而女色所帶來的心理性、道德性侵蝕（慳妬瞋諂等）卻直接摧毀善根、傷及法身慧命，且如牢獄枷鎖般根深難解，此一極端警語旨在喚醒修行者對情欲之害的高度警覺。</td></tr><tr><td class="bh14p13-src">女子小人，心淺智薄，唯欲是視，不觀富貴、智德、名聞，專行欲惡，破人善根。</td><td>淺薄如小人一般的女子，心思淺陋、智慧薄弱，眼中唯有情欲之事，並不會真正在乎對方的富貴、智慧德行、名聲名望，只是一味地追逐貪欲惡行，因而破壞修行人的善根。</td><td class="bh14p13-guan"><b>欲望的無差別性與盲目本質</b>——此段揭示情欲的本質是一種盲目、無差別的驅力，不辨對象的德行高下、身分尊卑，唯以欲望為導向，故其對善根的破壞力不因對象是否賢德而有所減損，這正是情欲之害「無差別性」與「盲目性」的深刻剖析。</td></tr><tr><td class="bh14p13-src">有捕魚師，名述婆伽，隨道而行，遙見王女在高樓上，窓中見面，想像染著，心不暫捨……情願不遂，憂恨懊惱，婬火內發，自燒而死。</td><td>有一位捕魚師，名叫述婆伽，正沿著道路行走，遠遠望見一位王女站在高樓之上，透過窗戶看見她的容顏，心中便生起想像染著之念，片刻也無法捨離……由於情欲的願望始終無法達成，內心充滿憂愁怨恨與懊惱，情欲之火從內心發作燃燒，最終自我焚燒而死。</td><td class="bh14p13-guan"><b>述婆伽自燒公案·情欲業力的極端病理報告</b>——這則述婆伽因單方面愛戀王女而終至自焚而死的公案，是本品刻畫情欲致命性的核心案例：情欲一旦生起染著，即使對象遙不可及、毫無互動基礎，仍能在內心引發足以自我毀滅的猛烈業力，充分印證「女衰最重」絕非誇飾之詞，而是修行者必須正視的真實心理病理。</td></tr></tbody></table><p class="bh14p13-note">卷十四第13品「忍辱雙重防禦·女色之害」原文·白話·中觀三欄對照，以「衣食為急云何能忍」設問起，答以智慧觀無常苦無我三法印，繼以死囚喻、麞鹿喻明觀無常對治貪著供養，轉入女色情欲之防禦：菩薩心不傾動、密迹金剛力士護法示現，以「女衰最重」極言女色之害勝於刀火雷電，再以述婆伽自燒、旃陀羅王女等公案印證情欲業力之猛烈，末以「除去情欲，忍不愛著」總收。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：三法印觀無常對治貪著　死囚麞鹿喻　女衰最重系統破壞　述婆伽自燒情欲業力</p></div></div>
+<script id="wy-bh14p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p13Btn"),BOX=document.getElementById("bh14p13Box"),MODAL=document.getElementById("bh14p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P13:END-->
 </body>
 </html>
