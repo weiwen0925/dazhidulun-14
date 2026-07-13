@@ -2380,5 +2380,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH14P8:END-->
+<!--WY-BH14P9:BEGIN-->
+<style id="wy-bh14p9-css">
+.bh14p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh14p9-fabbox.show{display:block;}
+.bh14p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh14p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh14p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh14p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh14p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh14p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh14p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh14p9-modal.open{display:flex;}
+.bh14p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh14p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh14p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh14p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh14p9-close:hover{background:#dde2e6;}
+.bh14p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh14p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh14p9-tbl th,.bh14p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh14p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh14p9-tbl thead th:nth-child(1){width:32%;}.bh14p9-tbl thead th:nth-child(2){width:41%;}.bh14p9-tbl thead th:nth-child(3){width:27%;}
+.bh14p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh14p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh14p9-guan{background:#eef2f5;color:#37505f;}
+.bh14p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh14p9-tbl tbody tr:nth-child(even) td.bh14p9-guan{background:#e8eef2;}
+.bh14p9-tbl tbody tr:nth-child(even) td.bh14p9-qa{background:#e7ecdb;}
+.bh14p9-tbl b{color:#8b2500;}
+.bh14p9-guan b{color:#2f6b5a;}
+.bh14p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh14p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh14p9-fabbox{right:14px;}.bh14p9-tbl{font-size:11px;}.bh14p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh14p9-fabbox" id="bh14p9Box"><button class="bh14p9-btn" id="bh14p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh14p9-ic">譯</span><span class="bh14p9-ls"><span class="bh14p9-l1">本品 · 原文·白話·中觀</span><span class="bh14p9-l2">白話翻譯表</span></span></button></div><div class="bh14p9-modal" id="bh14p9Modal" role="dialog" aria-modal="true"><div class="bh14p9-card"><button class="bh14p9-close" id="bh14p9Close" type="button" aria-label="關閉">×</button><h3>卷十四 · 第9品 白話翻譯表（眾生不可得·人無我）</h3><p class="sub">大智度論卷十四·眾生不可得（人無我） · 原文↔白話↔中觀概念 逐段對照</p><table class="bh14p9-tbl"><caption>眾生不可得（人無我） · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh14p9-qa">問曰：今眾生現有，云何言「眾生不可得」？</td><td>問曰：如今眾生明明現實存在，為什麼說「眾生不可得」呢？</td><td class="bh14p9-guan"><b>眾生現有與勝義觀待的張力</b>——此問代表世俗常識對「無我」教說最直接的質疑：若眾生確實存在於眼前，「不可得」豈非自相矛盾？此正是引出「二諦」（世俗諦／勝義諦）分判的契機。</td></tr><tr><td class="bh14p9-qa">答曰：肉眼所見，是為非見；若以慧眼觀，則不得眾生。如上檀中說無施者、無受者、無財物，此亦如是。</td><td>答曰：肉眼所看見的，並不是真實的照見；如果以般若慧眼觀察，就了不可得眾生的存在。就像前面講布施波羅蜜時所說「無施者、無受者、無所施之財物」一樣，這裡的道理也是如此。</td><td class="bh14p9-guan"><b>肉眼與慧眼·世俗有與勝義空的分判</b>——答語不否認世俗肉眼所見的假有現象，卻指出這並非「如實照見」；唯有般若慧眼所觀，才照見眾生了不可得，呼應布施波羅蜜「三輪體空」（無施者、受者、施物）的同一義理架構。</td></tr><tr><td class="bh14p9-src">論曰：若是五眾，五眾有五，眾生為一；如是者，五可為一，一可為五。譬如市易物直五匹，以一匹取之，則不可得。何以故？一不得作五故。以是故，知五眾不得作一眾生。</td><td>論曰：如果說眾生就是五蘊，五蘊有五種而眾生只是一個；這樣一來，五蘊便可以說是一，一也可以說是五。就好比市場交易，物品值五匹布，卻只用一匹布去換取，這是換不到的。為什麼呢？因為「一」不能等同於「五」。因此可知，五蘊不能等同於一個眾生。</td><td class="bh14p9-guan"><b>即蘊計我·五與一不相等的歸謬</b>——此段以數量邏輯（五蘊為五、眾生為一）歸謬式地破斥「眾生即是五蘊」的計執：若五即是一，則一切多與一的分別皆混亂無序，如同以一匹布換取值五匹之物不可得，凸顯「即蘊計我」在邏輯上站不住腳。</td></tr><tr><td class="bh14p9-src">復次，五眾生滅無常相；眾生法，從先世來、至後世，受罪、福於三界。若五眾是眾生，譬如草木自生自滅，如是則無罪縛，亦無解脫。以是故，知非五眾是眾生。</td><td>再者，五蘊具有生滅無常的相貌；而眾生之法，是從前世而來、延續到後世，在三界中承受罪報與福報的。如果五蘊就是眾生，那麼五蘊就像草木一樣自生自滅，如此一來便沒有罪業的繫縛，也沒有解脫可言了。因此可知，並非五蘊就是眾生。</td><td class="bh14p9-guan"><b>五蘊生滅無常·若即蘊則無因果相續</b>——此段從另一角度破「即蘊計我」：五蘊剎那生滅如草木自生自滅，若眾生即是五蘊，則善惡業報、繫縛解脫將無從安立，因為草木無所謂罪福可言，這與佛法因果相續的基本教理相違。</td></tr><tr><td class="bh14p9-src">復次，離五眾則我見心不生。</td><td>再者，若離開五蘊來看，則「我見」之心根本不會生起。</td><td class="bh14p9-guan"><b>離蘊觀照·我見不生的修證效驗</b>——此句從實踐觀行的角度指出：只要不再於五蘊之外另立一個「我」，我見（薩迦耶見）便無從生起，為下文正式破斥「離蘊計我」預作鋪墊。</td></tr><tr><td class="bh14p9-src">論曰：若離五眾有眾生，如先說神常遍中已破。……若離五眾有眾生，是為墮常；若墮常者，是則無生、無死。</td><td>論曰：如果說離開五蘊之外別有眾生存在，這在前面破斥「神我常存周遍」的論述中已經破斥過了。……如果離開五蘊而有眾生存在，這便墮入「常見」；若墮入常見，那麼就應當沒有生、也沒有死了。</td><td class="bh14p9-guan"><b>離蘊計我墮於常見</b>——此段將論鋒轉向「離蘊計我」的另一極端：若眾生離開五蘊而獨立恆存，便等同主張一恆常不變的神我，此前於破斥「神常遍」的論述中已被破斥；常論則必然導致「無生無死」的荒謬結論。</td></tr><tr><td class="bh14p9-src">復次，何以故？生名先無今有，死名已生便滅。若眾生常者，應遍滿五道中，先已常有，云何今復來生？若不有生，則無有死。</td><td>再者，這是什麼緣故呢？「生」是指先前沒有、現今才有；「死」是指已經出生後便歸於消滅。如果眾生是恆常不變的，那麼應當早已遍滿於五道之中、先前就恆常存在了，為什麼現在還會再度受生呢？如果不曾有「生」，那麼也就不會有「死」了。</td><td class="bh14p9-guan"><b>生滅定義·反顯離蘊常我之謬</b>——此段以「生」「死」的定義（先無今有、已生便滅）反顯常我論的內在矛盾：若眾生恆常，理應早已遍滿五道、無所謂再生；如此則「生」根本不能成立，「死」自然也無所依附——雙重歸謬確立「非常非斷」的中道正見。</td></tr></tbody></table><p class="bh14p9-note">卷十四第9品「眾生不可得（人無我）」原文·白話·中觀三欄對照，以「今眾生現有，云何言眾生不可得」一問開篇，答以肉眼非見、慧眼觀空，續以即蘊計我（五與一不相等）、蘊生滅無常則罪福無依二重歸謬破「即蘊計我」，再以離蘊計我墮於常見、生滅定義反顯常我之謬二重歸謬破「離蘊計我」，全品以一異門邏輯閉環確立人無我的中道正見。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：即蘊計我五一歸謬　蘊無常則罪福無依　離蘊計我墮於常見　一異門破我人無我</p></div></div>
+<script id="wy-bh14p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh14p9Btn"),BOX=document.getElementById("bh14p9Box"),MODAL=document.getElementById("bh14p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c14p9Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh14p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH14P9:END-->
 </body>
 </html>
